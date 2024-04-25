@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <meta charset="UTF-8">
+        <title>REGISTRO DE DATOS GENERALES</title>
+        <meta name="author" content="E9">
+    </head>
+
+    <body>
+        <header style="text-align: center;">
+            <h1>¡Bienvenido a tu registro!</h1>
+        </header>
+        <main>
+            <div>
+                <form action="success.html" method="get" name="datos"> 
+                    <fieldset>
+                        <legend>Identidad</legend>
+                        <label for="nBoleta">No. Boleta:</label>
+                        <input type="text" name="nBoleta" id="nBoleta"><br>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre"><br>
+                        <label for="apPat">Apellido Paterno:</label>
+                        <input type="text" name="apPaterno" id="apPaterno"><br>
+                        <label for="apMat">Apellido Materno:</label>
+                        <input type="text" name="apMaterno" id="apMaterno"><br>
+                        <label for="fechaNac">Fecha de nacimiento:</label>
+                        <input type="date" name="fechaNac" id="fechaNac"><br>
+                        <p>Género</p>
+                        <input type="radio" name="genero" value="Masculino">Masculino
+                        <input type="radio" name="genero" value="Femenino">Femenino
+                        <br>
+                        <label for="curp">CURP:</label>
+                        <input type="text" name="curp" id="curp"><br>
+                    </fieldset>
+                     
+                    <fieldset>
+                        <legend>Contacto</legend>
+
+                        <label for="calle">Calle y número:</label>
+                            <input type="text" name="calle" id="calle"><br>
+                            <label for="colonia">Colonia:</label>
+                            <input type="text" name="colonia" id="colonia"><br>
+                            <label for="alcaldia">Alcaldía:</label>
+                            <select name="alcaldia" id="alcaldia">
+                                <option value="Alcaldia">Selecciona una alcaldía</option>
+                                <option value="AO">Álvaro Obregón</option>
+                                <option value="AZ">Azcapotzalco</option>
+                                <option value="BJ">Benito Juárez</option>
+                                <option value="CM">Cuajimalpa de Morelos</option>
+                                <option value="COY">Coyoacán</option>
+                                <option value="CUA">Cuauhtémoc</option>
+                                <option value="GAM">Gustavo A. Madero</option>
+                                <option value="IZTAC">Iztacalco</option>
+                                <option value="IZTAP">Iztapalapa</option>
+                                <option value="LMC">La Magdalena Contreras</option>
+                                <option value="MH">Miguel Hidalgo</option>
+                                <option value="MA">Milpa Alta</option>
+                                <option value="TLH">Tláhuac</option>
+                                <option value="TLA">Tlalpan</option>
+                                <option value="VC">Venustiano Carranza</option>
+                                <option value="XO">Xochimilco</option>
+                            </select><br>
+                            <label for="cp">Código postal:</label>
+                            <input type="text" name="cp" id="cp"><br>
+                            <label for="telefono">Número telefónico o celular:</label>
+                            <input type="tel" name="telefono" id="telefono" pattern="[0-9]{10}"><br>
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" name="correo" id="correo"><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Procedencia</legend>
+                        <label for="cecyt">Escuela de procedencia:</label>
+                    <select>
+                        <option value="---">Ingresa una opción</option>
+                        <option value="1">CECyT n.º 1 “Gonzalo Vázquez Vela”</option>
+                        <option value="2">CECyT n.º 2 “Miguel Bernard Perales”</option>
+                        <option value="3">CECyT n.º 3 “Estanislao Ramírez Ruiz”</option>
+                        <option value="4">CECyT n.º 4 “Lázaro Cárdenas”</option>
+                        <option value="5">CECyT n.º 5 “Benito Juárez García”</option>
+                        <option value="6">CECyT n.º 6 “Miguel Othón de Mendizábal”</option>
+                        <option value="7">CECyT n.º 7 “Cuauhtémoc”</option>
+                        <option value="8">CECyT n.º 8 “Narciso Bassols García”</option>
+                        <option value="9">CECyT n.º 9 “Juan de Dios Bátiz Paredes”</option>
+                        <option value="10">CECyT n.º 10 “Carlos Vallejo Márquez”</option>
+                        <option value="11">CECyT n.º 11 “Wilfrido Massieu”</option>
+                        <option value="12">CECyT n.º 12 “José María Morelos y Pavón”</option>
+                        <option value="13">CECyT n.º 13:"Ricardo Flores Magón"</option>
+                        <option value="14">CECyT n.º 14:"Luis Enrique Erro Soler"</option>
+                        <option value="15">CECyT n.º 15:"Dióro Antúnez Echegaray"</option>
+                        <option value="16">CECyT n.º 16:"Hidalgo"</option>
+                        <option value="17">CECyT n.º 17:"Guanajuato"</option>
+                        <option value="18">CECyT n.º 18:Zacatecas"</option>
+                        <option value="19">CECyT n.º 19:"Leona Vicario,Tecámac"</option>
+                        <option value="OTRO">OTRO</option>
+                    </select>
+
+                    <label for="entidad">Entidad federativa de procedencia</label>
+                    <select>
+                        <option value="AGS">Aguascalientes</option>
+                        <option value="BC">Baja California</option>
+                        <option value="BCS">Baja California Sur</option>
+                        <option value="CAMP">Campeche</option>
+                        <option value="COAH">Coahuila</option>
+                        <option value="COL">Colima</option>
+                        <option value="CHIS">Chiapas</option>
+                        <option value="CHIH">Chihuahua</option>
+                        <option value="CDMX" selected>CDMX</option>
+                        <option value="DGO">Durango</option>
+                        <option value="GTO">Guanajauto</option>
+                        <option value="GRO">Guerrero</option>
+                        <option value="HGO">Hidalgo</option>
+                        <option value="JAL">Jalisco</option>
+                        <option value="MEX">Estado de México</option>
+                        <option value="MICH">Michoacán</option>
+                        <option value="MOR">Morelos</option>
+                        <option value="NAY">Nayarit</option>
+                        <option value="NL">Nuevo León</option>
+                        <option value="OAX">Oaxaca</option>
+                        <option value="PUE">Puebla</option>
+                        <option value="QRO">Querétaro</option>
+                        <option value="QR">Quintana Roo</option>
+                        <option value="SLP">San Luis Potosí</option>
+                        <option value="SIN">Sinaloa</option>
+                        <option value="SON">Sonora</option>
+                        <option value="TAB">Tabasco</option>
+                        <option value="TAM">Tamaulipas</option>
+                        <option value="TALX">Tlaxcala</option>
+                        <option value="VER">Veracruz</option>
+                        <option value="YUC">Yucatán</option>
+                        <option value="ZAC">Zacatecas</option>
+                    </select><br>
+                    
+                    <label for="nombreEscuela">Nombre de la Escuela:</label>
+                    <input type="text" name="nombre" id="nombre"><br>
+                    <label for="promedioDecimal">Promedio:</label>
+                    <input type="number" step="0.01" min="0" max="10" name="promedio" id="promedio"><br>
+                    <p>Escom fue tu:</p>
+                    <input type="checkbox" name="op1" id="1">1ra opción
+                    <input type="checkbox" name="op2" id="2">2da opción
+                    <input type="checkbox" name="op3" id="3">3ra opción
+                    <input type="checkbox" name="op4" id="4">4ta opción
+                    </fieldset>
+
+
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Registrar">
+                </form>
+
+            </div>
+        </main>
+    </body>
+</html>

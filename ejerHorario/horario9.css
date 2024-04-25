@@ -1,0 +1,33 @@
+div{
+	width: 80%;
+}
+
+table{
+  width: 100%;
+  border: 2px double black;
+  text-align: center;
+}
+
+#fondo{
+  background-color: #acbaf4;
+}
+
+th,td{
+  border: 1px solid navy;
+}
+
+th{
+  font-weight: bold;
+  color: white;
+  background-color: navy;
+}
+
+#subtitles{
+  font-weight: bold;
+  color: white;
+  background-color: navy;
+}
+
+.libre{
+  background-color: navy;
+}

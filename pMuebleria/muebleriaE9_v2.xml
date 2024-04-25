@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="valueof.xsl"?>
+
+<muebleria>
+    <mueble tipo="silla">
+        <color></color>
+        <tamaño></tamaño>
+        <material></material>
+        <precio></precio>
+    </mueble>
+    <mueble tipo="silla">
+        <color></color>        
+        <tamaño></tamaño>        
+        <material></material>        
+        <precio></precio> 
+    </mueble>
+    <mueble tipo="silla">
+        <color></color>
+        <tamaño></tamaño>
+        <material></material>
+        <precio></precio>
+    </mueble>
+    <mueble tipo="silla">
+        <color></color>
+        <tamaño></tamaño>
+        <material></material>
+        <precio></precio>
+    </mueble>
+    <mueble tipo="mesa">
+        <color></color>
+        <tamaño></tamaño>
+        <material></material>
+        <precio></precio>
+    </mueble>
+    <mueble tipo="mesa">
+        <color></color>
+        <tamaño></tamaño>
+        <material></material>
+        <precio></precio>
+    </mueble>
+    <mueble tipo="mesa">
+        <color></color>
+        <tamaño></tamaño>
+        <material></material>
+        <precio></precio>
+    </mueble>
+    <mueble tipo="mesa">
+        <color></color>
+        <tamaño></tamaño>
+        <material></material>
+        <precio></precio>
+    </mueble>
+    <mueble tipo="cama">
+        <color></color>
+        <tamaño></tamaño>
+        <material></material>
+        <precio></precio>
+    </mueble>
+    <mueble tipo="cama">
+        <color></color>
+        <tamaño></tamaño>
+        <material></material>
+        <precio></precio>
+    </mueble>
+    <mueble tipo="cama">
+        <color></color>
+        <tamaño></tamaño>
+        <material></material>
+        <precio></precio>
+    </mueble>
+    <mueble tipo="cama">
+        <color></color>
+        <tamaño></tamaño>
+        <material></material>
+        <precio></precio>
+    </mueble>
+</muebleria>

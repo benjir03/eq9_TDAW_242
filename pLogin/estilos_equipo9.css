@@ -1,0 +1,58 @@
+footer {
+    background-color: blue;
+}
+
+header {
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+#bienvenido {
+    text-align: center;
+}
+
+#div_form {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+
+footer {
+    background-color: blue;
+}
+
+footer span {
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid;
+}
+
+#ingresar {
+    color: white;
+    background-color: blue;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+#cont_bot {
+    padding-top: 10px;
+}

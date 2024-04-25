@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+.fila::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+
+}
+
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width:600px){
+    body{
+        background-color: lightgreen;
+        color: green;
+        font-size: 1.5em;
+    }
+    .col-m-4{  width: 100%;}
+}
+
+@media only screen and (min-width: 600px){
+    body{
+        background-color: lightblue;
+        color: darkblue;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .col-m-2{  width: 50%;}
+}
+
+@media only screen and (min-width: 951px) {
+    body {
+        background-color: lightpink;
+        color: white;
+        font-style: italic;
+        font-size: 18px;
+    }
+    .col-m-1{  width: 25%;}
+}
