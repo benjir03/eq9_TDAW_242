@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="muebleriaE9.xsl"?>
+
+<muebleria>
+    <mueble tipo="silla">
+        <color>Blanca</color>
+        <tamaño>Estandar</tamaño>
+        <material>Metal</material>
+        <precio>1000</precio>
+    </mueble>
+    <mueble tipo="silla">
+        <color>Azul</color>        
+        <tamaño>Estandar</tamaño>        
+        <material>Madera</material>        
+        <precio>2000</precio> 
+    </mueble>
+    <mueble tipo="silla">
+        <color>Verde</color>
+        <tamaño>Estandar</tamaño>
+        <material>Metal</material>
+        <precio>1500</precio>
+    </mueble>
+    <mueble tipo="silla">
+        <color>Rojo</color>
+        <tamaño>Estandar</tamaño>
+        <material>Madera</material>
+        <precio>1200</precio>
+    </mueble>
+    <mueble tipo="mesa">
+        <color>Blanca</color>
+        <tamaño>Estandar</tamaño>
+        <material>Madera</material>
+        <precio>6000</precio>
+    </mueble>
+    <mueble tipo="mesa">
+        <color>Caoba</color>
+        <tamaño>Estandar</tamaño>
+        <material>Madera</material>
+        <precio>7000</precio>
+    </mueble>
+    <mueble tipo="mesa">
+        <color>Madera</color>
+        <tamaño>Estandar</tamaño>
+        <material>Madera</material>
+        <precio>7000</precio>
+    </mueble>
+    <mueble tipo="mesa">
+        <color>Beige</color>
+        <tamaño>Estandar</tamaño>
+        <material>Madera</material>
+        <precio>4000</precio>
+    </mueble>
+    <mueble tipo="cama">
+        <color>Negro</color>
+        <tamaño>Individual</tamaño>
+        <material>Madera</material>
+        <precio>7500</precio>
+    </mueble>
+    <mueble tipo="cama">
+        <color>Cafe</color>
+        <tamaño>Matrimonial</tamaño>
+        <material>Metal</material>
+        <precio>6000</precio>
+    </mueble>
+    <mueble tipo="cama">
+        <color>Caoba</color>
+        <tamaño>Individual</tamaño>
+        <material>Madera</material>
+        <precio>4500</precio>
+    </mueble>
+    <mueble tipo="cama">
+        <color>Cafe</color>
+        <tamaño>Matrimonial</tamaño>
+        <material>Madera</material>
+        <precio>5000</precio>
+    </mueble>
+</muebleria>
