@@ -32,5 +32,38 @@
           
         <h1>PÁGINA DE registro</h1>
 
+        <div class="p-3">
+            <form action="" method="GET" name="datos" id="DatosPA">
+                <fieldset class="">
+                    <legend><b>Datos personales y académicos</b></legend>
+                    <p>Por favor, ingrese los siguientes datos para crear su cuenta en el programa de tutorías.</p>
+                    <label for="boleta">Boleta: </label>
+                    <input type="number" name="boleta" id="boleta" placeholder="Introduce los 10 digitos" required><br>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre"><br>
+                    <label for="primerAp">Apellido paterno: </label>
+                    <input type="text" name="primerAp" id="primerAp"><br>
+                    <label for="segundoAp">Apellido materno: </label>
+                    <input type="text" name="segundoAp" id="segundoAp"><br>
+                    <label for="tel">No. de teléfono: </label>
+                    <input type="tel" name="tel" id="tel" placeholder="+52"><br>
+                    <label for="semestre">Semestre que cursas actualmente: </label>
+                    <input type="number" name="semestre" id="semestre" required><br>
+                    <label for="carrera">Carrera en la que estas inscrito: </label>
+                    <select id="carrera">
+                        <option value="0">Selecciona una carrera:</option>
+                        <option value="isc">Ingeniería en Sistemas Computacionales</option>
+                        <option value="iia">Ingeniería en Inteligencia Artificial</option>
+                        <option value="lcd">Licenciatura en Ciencia de Datos</option>
+                    </select><br>
+                    <p>Elige el género de tu tutor: </p>
+                    <input type="radio" name="genero" value="H">Hombre
+                    <input type="radio" name="genero" value="M">Mujer
+                </fieldset>
+                <button>Registrar</button>
+                <button>Limpiar</button>
+            </form>
+        </div>
+
     </body>
 </html>
