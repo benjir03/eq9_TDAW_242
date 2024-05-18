@@ -1,7 +1,42 @@
+:root{
+    --blanco:#FFFFFF;
+    --obscuro:#0B0B0B;
+    --primario:#ff004853;
+    --secundario:#933751f1;
+    --gris:#6C6E6F ;
+}
+
+h2{
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+
 .headerImg {
     width: 50px;
 }
 
 .position_left{
     text-align: left;
+}
+
+.hero{
+    background-image: url(../src/imgEscom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    position: relative;
+}
+
+
+.bg_mision_vision{
+    background-color:var(--secundario);
+    width:100%;
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+    color:var(--blanco) 
+}
+
+.bg_objetivos{
+    background-color:var(--primario);
+    width:100%;
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
 }
