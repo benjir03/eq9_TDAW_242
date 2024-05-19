@@ -1,15 +1,18 @@
 :root{
     --blanco:#FFFFFF;
     --obscuro:#0B0B0B;
-    --primario:#ff004853;
-    --secundario:#933751f1;
+    --primario:#771731eb;
+    --secundario:#480518;
     --gris:#6C6E6F ;
 }
+
+
 
 h2{
     text-align: center;
     padding: 50px 0 20px 0;
 }
+ 
 
 .headerImg {
     width: 50px;
@@ -18,13 +21,28 @@ h2{
 .position_left{
     text-align: left;
 }
-
+/*
 .hero{
-    background-image: url(../src/imgEscom.jpg);
+    background-image: url(../src/IPN-rejas.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height:100%;
     position: relative;
+}
+*/
+
+section p {
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+
+.bg_objetivo {
+    background-color: var(--primario);
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+    color:var(--blanco);
 }
 
 
@@ -32,11 +50,58 @@ h2{
     background-color:var(--secundario);
     width:100%;
     box-sizing: border-box; /* Para incluir el padding en el ancho total */
-    color:var(--blanco) 
+    color:var(--blanco);
 }
 
-.bg_objetivos{
-    background-color:var(--primario);
+.bg_principal{
+    background-color:var(--secundario);
     width:100%;
     box-sizing: border-box; /* Para incluir el padding en el ancho total */
+    color:var(--blanco);
+}
+
+.size_img{
+  width:400px;
+  height: 200px;
+}
+
+
+.tutoria_individual{
+    background-image: url(../src/img_tutoria_individual.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:300px;
+    position: relative;
+}
+
+.tutoria_grupal{
+    background-image: url(../src/img_tutotia_grupal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:300px;
+    position: relative;
+}
+
+.tutoria_recuperacion{
+    background-image: url(../src/img_tutoria_recuperacionacademica.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:300px;
+    position: relative;
+}
+
+.tutoria_regularizacion{
+    background-image: url(../src/tutoria_regularizacion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:300px;
+    position: relative;
+}
+
+.tutoria_pares{
+    background-image: url(../src/img_tutoria_pares.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:300px;
+    position: relative;
 }
