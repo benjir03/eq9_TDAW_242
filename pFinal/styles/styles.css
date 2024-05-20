@@ -105,3 +105,11 @@ section p {
     height:300px;
     position: relative;
 }
+
+.footer {
+    background-color: #480518;
+}
+
+a {
+    text-decoration: none;
+}
