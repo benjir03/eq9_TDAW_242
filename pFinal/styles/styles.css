@@ -60,10 +60,18 @@ section p {
     color:var(--blanco);
 }
 
-.size_img{
-  width:400px;
-  height: 200px;
+.bg_main{
+    background-color:var(--secundario);
+    width:100%;
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+    color:var(--obscuro);
 }
+
+.custom-img-size {
+    width: auto;
+    height: 200px;
+    object-fit: cover; /* Esto mantiene el aspecto de la imagen recortando lo que sobre */
+  }
 
 
 .tutoria_individual{
