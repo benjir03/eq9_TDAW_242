@@ -11,14 +11,14 @@ if (!$conect) {
     die("Error en la conexión: " . mysqli_connect_error());
 }
 
-$user = $_POST["correo"];
-$pass = $_POST["contra"];
+$correo = $_POST["correo"];
+$contra= $_POST["contra"];
 
 // Escapar las variables para prevenir inyección SQL
-$user = mysqli_real_escape_string($conect, $user);
-$pass = mysqli_real_escape_string($conect, $pass);
+$correo = mysqli_real_escape_string($conect, $correo);
+$contra = mysqli_real_escape_string($conect, $contra);
 
-$query = "SELECT * FROM admins WHERE correo = '$user' AND pass = '$pass'";
+$query = "SELECT * FROM admin WHERE Email = '$correo' AND contraseña = '$contra'";
 $result = mysqli_query($conect, $query);
 
 if (!$result) {
@@ -30,7 +30,7 @@ $nr = mysqli_num_rows($result);
 if ($nr == 1) {
     // Obtener el nombre de usuario
     $row = mysqli_fetch_assoc($result);
-    $nombreUsuario = $row['nombre_de_usuario'];
+    $nombreUsuario = $row['Nombre'];
     //header("Location: bienvenido.php?usuario=$nombreUsuario");
     echo "Bienvenido " . $nombreUsuario;
 } else {
