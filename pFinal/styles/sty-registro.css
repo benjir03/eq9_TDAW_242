@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;;
+    background-image: url(/imgs/clasesipn.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Cambria;
+}
+
+.form-registro{
+    width: 60%;
+    background-color: white;
+    padding: 40px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+legend{
+    text-align: center;
+}
+
+.campo-text{
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 8px;
+    border:none;
+    border-bottom:groove;
+}
+
+.form-registro select{
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color:gray;
+}
+
+footer{
+    background-color: white;
+    padding: 20px 80px;
+}
+
+#alertas{
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 25px;
+}
+
+@media only screen and (max-width:800px){
+    .form-registro{
+        width: 80%;
+    }
+}
