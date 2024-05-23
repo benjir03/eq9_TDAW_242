@@ -52,29 +52,29 @@
                   <label for="tel">No. de teléfono</label><br>
                   <input class="campo-text" type="tel" name="tel" id="tel"><br>
                   <label for="semestre">Semestre que cursas actualmente</label><br>
-                  <select>
-                    <option value="ninguno">Elige tu semestre actual</option>
+                  <select id="semestre" required>
+                    <option value="0">Elige tu semestre actual</option>
                     <option value="1">Primero</option>
-                    <option value="1">Segundo</option>
-                    <option value="1">Tercero</option>
-                    <option value="1">Cuarto</option>
-                    <option value="1">Quinto</option>
-                    <option value="1">Sexto</option>
-                    <option value="1">Septimo</option>
-                    <option value="1">Octavo</option>
-                    <option value="1">Noveno</option>
-                    <option value="1">Decimo</option>
+                    <option value="2">Segundo</option>
+                    <option value="3">Tercero</option>
+                    <option value="4">Cuarto</option>
+                    <option value="5">Quinto</option>
+                    <option value="6">Sexto</option>
+                    <option value="7">Septimo</option>
+                    <option value="8">Octavo</option>
+                    <option value="9">Noveno</option>
+                    <option value="10">Decimo</option>
                   </select>
                   <label for="carrera">Carrera en la que estas inscrito</label><br>
-                  <select id="carrera">
+                  <select id="carrera" required>
                       <option value="0">Elige tu carrera</option>
                       <option value="isc">Ingeniería en Sistemas Computacionales</option>
                       <option value="iia">Ingeniería en Inteligencia Artificial</option>
                       <option value="lcd">Licenciatura en Ciencia de Datos</option>
                   </select><br>
                   <p>Elige el género de tu tutor</p>
-                  <input type="radio" name="genero" value="H">Hombre
-                  <input type="radio" name="genero" value="M">Mujer
+                  <input type="radio" name="genero" id="hombre" value="H">Hombre
+                  <input type="radio" name="genero" id="mujer" value="M">Mujer
                 </fieldset><br>
                 <fieldset>
                   <legend><b>Cuenta</b></legend>
@@ -88,7 +88,7 @@
                 
                 <div class="d-grid gap-2 col-6 mx-auto">
 
-                  <button class="btn btn-primary" type="submit">RegAAAAistrar</button>
+                  <button class="btn btn-primary" type="submit">Registrar</button>
                   <button class="btn btn-primary" onclick="cleanForm()">Limpiar</button>
                   
                 </div>
