@@ -4,7 +4,7 @@ body{
     background-image: url(../imgs/clasesipn.jpg);
     background-size: cover;
     background-position: center;
-    font-family: Cambria;
+    /*font-family: Cambria;*/
 }
 
 .form-registro{
