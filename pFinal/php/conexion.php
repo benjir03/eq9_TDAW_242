@@ -19,6 +19,20 @@ $validaResultado=mysqli_num_rows($resultado);
 
 echo "Tenemos $validaResultado registro(s) en tu base de datos ejemplodb";*/
 
+$boleta = $_POST['boleta'];
+$nombre = $_POST['nombre'];
+$apPat = $_POST['primerAp'];
+$apMat = $_POST['segundoAp'];
+$tel = $_POST['tel'];
+$semestre = $_POST['semestre'];
+$carrera = $_POST['carrera'];
+$genero = $_POST['genero'];
+$correo = $_POST['correo'];
+$contra = $_POST['contra'];
+
+$sql = "INSERT INTO alumnos (Boleta, Nombre, Apellido_Materno, Apellido_Paterno, Telefono, Semestre, Carrera, Genero, Correo, Contraseña)
+VALUES ('$boleta', '$nombre', '$primerAp', '$segundoAp', '$tel', '$semestre', '$carrera', '$genero', '$correo', '$contra')";
+
 ?>
 
 <!DOCTYPE html>
@@ -39,32 +53,29 @@ echo "Tenemos $validaResultado registro(s) en tu base de datos ejemplodb";*/
                 <td>Carrera</td>
                 <td>Genero</td>
                 <td>Correo</td>
-                <td>Contraseña</td>
-                
             </tr>
-
+            
             <?php
-            $sql="SELECT * from alumnos";
-            $result=mysqli_query($conexion,$sql);
+            //$sql="SELECT * from alumnos";
+            //$result=mysqli_query($conexion,$sql);
 
-            while($mostrar=mysqli_fetch_array($result)){
-            ?>
+            //while($mostrar=mysqli_fetch_array($result)){
+            //?>
 
             <tr>
-                <td><?php echo $mostrar['Boleta']?> ></td>
-                <td><?php echo $mostrar['Nombre']?> ></td>
-                <td><?php echo $mostrar['Apellido_Paterno']?> ></td>
-                <td><?php echo $mostrar['Apellido_Materno']?> ></td>
-                <td><?php echo $mostrar['Telefono']?> ></td>
-                <td><?php echo $mostrar['Semestre']?> ></td>
-                <td><?php echo $mostrar['Carrera']?> ></td>
-                <td><?php echo $mostrar['Genero']?> ></td>
-                <td><?php echo $mostrar['Correo']?> ></td>
-                <td><?php echo $mostrar['Contraseña']?> ></td>
+                <td><?php echo $boleta?></td>
+                <td><?php echo $nombre?></td>
+                <td><?php echo $apPat?></td>
+                <td><?php echo $apMat?></td>
+                <td><?php echo $tel?></td>
+                <td><?php echo $semestre?></td>
+                <td><?php echo $carrera?></td>
+                <td><?php echo $genero?></td>
+                <td><?php echo $correo?></td>
                 
             </tr>
         <?php
-        }
+
         ?>
         </table>
     </body>

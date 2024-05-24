@@ -37,7 +37,7 @@
         </header>
         <main>
             <div class="form-registro">
-              <form action="../php/conexion.php" method="GET" name="datos" id="registro">
+              <form action="../php/conexion.php" method="POST" name="datos" id="registro">
                 <fieldset>
                   <legend><b>Datos personales y academicos</b></legend>
                   <p>Por favor, ingrese los siguientes datos para crear su cuenta en el programa de tutorias.</p>
@@ -52,7 +52,7 @@
                   <label for="tel">No. de teléfono</label><br>
                   <input class="campo-text" type="tel" name="tel" id="tel"><br>
                   <label for="semestre">Semestre que cursas actualmente</label><br>
-                  <select id="semestre" required>
+                  <select id="semestre" name="semestre" required>
                     <option value="0">Elige tu semestre actual</option>
                     <option value="1">Primero</option>
                     <option value="2">Segundo</option>
@@ -66,9 +66,9 @@
                     <option value="10">Decimo</option>
                   </select>
                   <label for="carrera">Carrera en la que estas inscrito</label><br>
-                  <select id="carrera" required>
+                  <select id="carrera" name="carrera" required>
                       <option value="0">Elige tu carrera</option>
-                      <option value="isc">Ingeniería en Sistemas Computacionales</option>
+                      <option value="Ingenieria en Sistemas Computacionales">ISC</option>
                       <option value="iia">Ingeniería en Inteligencia Artificial</option>
                       <option value="lcd">Licenciatura en Ciencia de Datos</option>
                   </select><br>
