@@ -1,0 +1,19 @@
+:root{
+    --blanco:#FFFFFF;
+    --obscuro:#0B0B0B;
+    --primario:#771731eb;
+    --secundario:#480518;
+    --gris:#6C6E6F ;
+}
+
+.headerImg {
+    width: 50px;
+}
+
+footer{
+    padding: 20px 80px;
+}
+
+a{
+    text-decoration: none;
+}
