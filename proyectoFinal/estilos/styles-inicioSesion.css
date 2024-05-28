@@ -1,0 +1,48 @@
+@import url("styles-general.css");
+
+.fondoSesion{
+    background-image: url("../imgs/fondoInicioSesion.jpg");
+    height: 500px;
+    background-size: cover;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.contenedorForm{
+    background-color: white;
+    padding: 25px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+legend{
+    text-align: center;
+}
+
+.campo-texto{
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border-width: thin;
+}
+
+@media (max-width:600px){
+    .contenedorForm{
+        width: 50%;
+    }
+}
+
+@media (min-width: 600px){
+    .contenedorForm{
+        width: 50%;
+    }
+}
+
+@media (min-width: 951px) {
+    .contenedorForm{
+        width: 475px;
+    }
+}

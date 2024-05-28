@@ -7,12 +7,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>REGISTRO</title>
+        <title>ADMIN</title>
         <meta name="author" content="Equipo 9">
         
         <!-- S T Y L E S -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="../estilos/styles-registro.css">
+        <link rel="stylesheet" href="../estilos/styles-inicioSesion.css">
         
     </head>
 
@@ -25,8 +25,8 @@
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="../index.php" class="nav-link px-2 text-secondary">Inicio</a></li>
-                    <li><a href="formularioRegistro.php" class="nav-link px-2 text-white">Registro</a></li>
-                    <li><a href="inicioSesion.php" class="nav-link px-2 text-secondary">Admin</a></li>
+                    <li><a href="formularioRegistro.php" class="nav-link px-2 text-secondary">Registro</a></li>
+                    <li><a href="" class="nav-link px-2 text-white">Admin</a></li>
                     <li><a href="" class="nav-link px-2 text-secondary">Acuse PDF</a></li>
                 </ul>
                 <!--
@@ -37,7 +37,24 @@
 
         <!-- MAIN -->
         <main>
-            <p>Esta es una prueba registroooo</p>
+            <div class="fondoSesion container-fluid d-flex justify-content-center align-items-center row-full-height">
+                <div class="contenedorForm">
+                    <form action="" method="POST" name="inicioSesion" id="iSesion">
+                        <fieldset>
+                            <legend>Inicio de sesión como administrador</legend>
+                            <input class="campo-texto" type="email" name="correoSesion" id="correo" placeholder="Ingresa tu correo">
+                            <br>
+                            <input class="campo-texto" type="contra" name="contraSesion" id="contra" placeholder="Ingresa tu contraseña">
+                        </fieldset>
+
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="submit">Iniciar sesión</button>
+                        </div>
+
+                        <p class="alertas"></p>
+                    </form>
+                </div>
+            </div>
         </main>
 
         <!-- FOOTER -->

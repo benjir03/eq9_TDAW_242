@@ -26,7 +26,7 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="index.html" class="nav-link px-2 text-white">Inicio</a></li>
                     <li><a href="views/formularioRegistro.php" class="nav-link px-2 text-secondary">Registro</a></li>
-                    <li><a href="" class="nav-link px-2 text-secondary">Admin</a></li>
+                    <li><a href="views/inicioSesion.php" class="nav-link px-2 text-secondary">Admin</a></li>
                     <li><a href="" class="nav-link px-2 text-secondary">Acuse PDF</a></li>
                 </ul>
                 <!--
