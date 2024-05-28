@@ -38,7 +38,7 @@
         <!-- MAIN -->
         <main>
             <div class="fondoSesion container-fluid d-flex justify-content-center align-items-center row-full-height">
-                <div class="contenedorForm">
+                <div class="contenedorFormSesion">
                     <form action="" method="POST" name="inicioSesion" id="iSesion">
                         <fieldset>
                             <legend>Inicio de sesión como administrador</legend>

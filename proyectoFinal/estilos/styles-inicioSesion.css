@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-.contenedorForm{
+.contenedorFormSesion{
     background-color: white;
     padding: 25px;
     margin: auto;
@@ -29,20 +29,32 @@ legend{
     border-width: thin;
 }
 
+.campo-text::placeholder{
+    color: #3C3C3C;
+}
+
+.alertas{
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+}
+
 @media (max-width:600px){
-    .contenedorForm{
+    .contenedorFormSesion{
         width: 50%;
     }
 }
 
 @media (min-width: 600px){
-    .contenedorForm{
+    .contenedorFormSesion{
         width: 50%;
     }
 }
 
 @media (min-width: 951px) {
-    .contenedorForm{
+    .contenedorFormSesion{
         width: 475px;
     }
 }

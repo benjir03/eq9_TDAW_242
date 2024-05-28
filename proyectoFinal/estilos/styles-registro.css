@@ -1,1 +1,67 @@
 @import url(styles-general.css);
+
+.fondoRegistro{
+    background-image: url("../imgs/fondoRegistro.jpg");
+    height: 1200px;
+    background-size: cover;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.contenedorFormRegistro{
+    background-color: white;
+    padding: 25px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+legend{
+    text-align: center;
+}
+
+.campo-texto{
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border-width: thin;
+}
+
+.campo-text::placeholder{
+    color: #3C3C3C;
+}
+
+.alertas{
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+}
+
+@media (max-width:600px){
+    .contenedorFormRegistro{
+        width: 60%;
+    }
+    #carrera{
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px){
+    .contenedorFormRegistro{
+        width: 60%;
+    }
+}
+
+@media (min-width: 951px) {
+    .contenedorFormRegistro{
+        width: 570px;
+    }
+}
+
+p{
+    color:red;
+}
