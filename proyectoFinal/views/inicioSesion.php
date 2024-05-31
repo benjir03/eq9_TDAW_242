@@ -39,16 +39,16 @@
         <main>
             <div class="fondoSesion container-fluid d-flex justify-content-center align-items-center row-full-height">
                 <div class="contenedorFormSesion">
-                    <form action="" method="POST" name="inicioSesion" id="iSesion">
+                    <form action="../php/inicioSesion.php" method="POST" name="inicioSesion" id="iSesion">
                         <fieldset>
                             <legend>Inicio de sesión como administrador</legend>
                             <input class="campo-texto" type="email" name="correoSesion" id="correo" placeholder="Ingresa tu correo">
                             <br>
-                            <input class="campo-texto" type="contra" name="contraSesion" id="contra" placeholder="Ingresa tu contraseña">
+                            <input class="campo-texto" type="password" name="contraSesion" id="contra" placeholder="Ingresa tu contraseña">
                         </fieldset>
 
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <button class="btn btn-primary" type="submit">Iniciar sesión</button>
+                            <input class="btn btn-primary" type="submit" value="Iniciar sesión">
                         </div>
 
                         <p class="alertas"></p>

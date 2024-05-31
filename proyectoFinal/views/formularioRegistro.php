@@ -66,7 +66,7 @@
                             <br>
                             <label for="semestre">Semestre que cursas actualmente:</label>
                             <br>
-                            <select name="semestre" id="sem" required>
+                            <select name="semestre" id="sem">
                                 <option value="0">Elige tu semestre actual</option>
                                 <option value="1">Primero</option>
                                 <option value="2">Segundo</option>
@@ -112,9 +112,10 @@
                         <p class="alertas" id="alertas"></p>
 
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <button class="btn btn-primary" type="submit">Registrar</button>
+                            <input class="btn btn-primary" type="submit" value="Registrar">
                             <button class="btn btn-primary" onclick="cleanForm()">Limpiar</button>
                         </div>
+                    </form>
                 </div>
             </div>
         </main>

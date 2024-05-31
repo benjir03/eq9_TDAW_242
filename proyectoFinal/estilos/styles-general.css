@@ -17,3 +17,27 @@ footer{
 a{
     text-decoration: none;
 }
+
+legend{
+    text-align: center;
+}
+
+.campo-texto{
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border-width: thin;
+}
+
+.campo-text::placeholder{
+    color: #3C3C3C;
+}
+
+.alertas{
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+}
