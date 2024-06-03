@@ -2,6 +2,8 @@
     // Incluir el archivo de conexión
     require "conect.php";
 
+    session_start();
+
     // Obtener los datos del formulario
     $correo = $_POST["correoSesion"];
     $contrasena = $_POST["contraSesion"];
@@ -13,8 +15,18 @@
     $num_rows = mysqli_num_rows($validar_login);
 
     if ($num_rows > 0) {
-        //echo "Inicio de sesión exitoso. Usuario: $correo";
+        // Iniciar sesión
+        session_start();
+        $_SESSION["correo"] = $correo;
+        $_SESSION["status"] = 1;
+
+        // Obtener el nombre de usuario
+        $row = mysqli_fetch_assoc($validar_login);
+        $_SESSION["username"] = $row['username'];
+
+        // Redirigir al usuario a la página restringida
         header("location: ../restringido/log_home.php");
+        exit();
     } else {
         echo "Correo o contraseña incorrectos.";
     }

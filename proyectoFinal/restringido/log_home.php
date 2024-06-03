@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+//if($_SESSION["status"] == 0) {
+//    header("location: ../views/inicioSesion.php");
+//}
+
+$username_session = $_SESSION["username"];
 ?>
 
 <!DOCTYPE html>
@@ -29,9 +36,7 @@
                     <li><a href="" class="nav-link px-2 text-white">Admin</a></li>
                     <li><a href="" class="nav-link px-2 text-secondary">Acuse PDF</a></li>
                 </ul>
-                <!--
-                <button type="button" class="btn btn-outline-light me-2">Login</button>
-                -->
+                <button type="button" class="btn btn-outline-light me-2" onclick="cerrarSesion()">Login</button>
             </div>
         </header>
 
@@ -39,7 +44,7 @@
         <main>
             <div class="fondoSesion container-fluid d-flex justify-content-center align-items-center row-full-height">
                 <div class="contenedorFormSesion">
-                    <h1>BIENVENIDO</h1>
+                    <h1>BIENVENIDO(A) <?php echo "$username_session"?></h1>
                 </div>
             </div>
         </main>
@@ -51,6 +56,13 @@
           </footer>
           
         <!-- S C R I P T S -->
+        <script>
+            function cerrarSesion() {
+                <?php $_SESSION["status"] = 0;
+                //session_destroy();?>
+                window.location.href = "../php/destroy.php";
+            }
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
