@@ -16,7 +16,6 @@
 
     if ($num_rows > 0) {
         // Iniciar sesión
-        session_start();
         $_SESSION["correo"] = $correo;
         $_SESSION["status"] = 1;
 
