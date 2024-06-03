@@ -35,9 +35,83 @@
             </div>
         </header>
 
+        <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+	    <div class="carousel-indicators">
+	        <button type="button" data-bs-target="#carouselE" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	        <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" aria-current="false" aria-label="Slide 2"></button>
+	        <button type="button" data-bs-target="#carouselE" data-bs-slide-to="2" aria-current="false" aria-label="Slide 3"></button>
+	        <button type="button" data-bs-target="#carouselE" data-bs-slide-to="3" aria-current="false" aria-label="Slide 4"></button>
+	        <button type="button" data-bs-target="#carouselE" data-bs-slide-to="4" aria-current="false" aria-label="Slide 5"></button>
+	        <button type="button" data-bs-target="#carouselE" data-bs-slide-to="5" aria-current="false" aria-label="Slide 6"></button>
+	        <button type="button" data-bs-target="#carouselE" data-bs-slide-to="6" aria-current="false" aria-label="Slide 7"></button>
+	        <button type="button" data-bs-target="#carouselE" data-bs-slide-to="7" aria-current="false" aria-label="Slide 8"></button>
+	    </div>
+	    <div class="carousel-inner">
+	        <div class="carousel-item active">
+	            <img src="imgs/0.jpg" class="d-block w-100" alt="carousel" title="carousel">
+	            <div class="carousel-caption">
+	                <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
+	                <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
+	            </div>
+	        </div>
+	        <div class="carousel-item">
+	            <img src="imgs/1.jpg" class="d-block w-100" alt="carousel" title="carousel">
+	            <div class="carousel-caption">
+	                <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
+	                <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
+	            </div>
+	        </div>
+	        <div class="carousel-item">
+	            <img src="imgs/2.jpg" class="d-block w-100" alt="carousel" title="carousel">
+	            <div class="carousel-caption">
+	                <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
+	                <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
+	            </div>
+	        </div>
+	        <div class="carousel-item">
+	            <img src="imgs/3.jpg" class="d-block w-100" alt="carousel" title="carousel">
+	            <div class="carousel-caption">
+	                <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
+	                <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Mas Información</a>
+	            </div>
+	        </div>
+	        <div class="carousel-item">
+	            <img src="imgs/4.jpg" class="d-block w-100" alt="carousel" title="carousel">
+	            <div class="carousel-caption">
+	                <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
+	                <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Mas Información</a>
+	            </div>
+	        </div>
+	        <div class="carousel-item">
+	            <img src="imgs/5.jpg" class="d-block w-100" alt="carousel" title="carousel">
+	            <div class="carousel-caption">
+	                <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
+	                <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Mas Información</a>
+	            </div>
+	        </div>
+	        <div class="carousel-item">
+	            <img src="imgs/6.jpg" class="d-block w-100" alt="carousel" title="carousel">
+	            <div class="carousel-caption">
+	                <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
+	                <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Mas Información</a>
+	            </div>
+	        </div>
+	        <div class="carousel-item">
+	            <img src="imgs/7.jpg" class="d-block w-100" alt="carousel" title="carousel">
+	            <div class="carousel-caption">
+	                <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
+	                <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Mas Información</a>
+	            </div>
+	        </div>
+	    </div>
+	    <button class = "carousel-control-prev" type="button" data-bs-target = "#carouselE" data-bs-slide = "prev"><span class="carousel-control-prev-icon" aria-hidden = "true"></span><span class = "visually-hidden">Previous</span></button>
+
+	    <button class = "carousel-control-next" type="button" data-bs-target = "#carouselE" data-bs-slide = "next"><span class="carousel-control-next-icon" aria-hidden = "true"></span><span class = "visually-hidden">Next</span></button>
+	    </div>
+
         <!-- MAIN -->
         <main>
-            <p>Esta es una prueba</p>
+            <p>Esta no es una prueba</p>
         </main>
 
         <!-- FOOTER -->
