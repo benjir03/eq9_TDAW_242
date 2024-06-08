@@ -25,9 +25,10 @@ legend{
 .campo-texto{
     width: 100%;
     padding: 6px;
-    border-radius: 8px;
     margin-bottom: 8px;
     border-width: thin;
+    border: none;
+    border-bottom: groove;
 }
 
 .campo-text::placeholder{

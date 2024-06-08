@@ -39,7 +39,7 @@
         <main>
             <div class="fondoRegistro container-fluid d-flex justify-content-center align-items-center row-full-height">
                 <div class="contenedorFormRegistro">
-                    <form action="" method="POST" name="registro" id="reg">
+                    <form action="../php/registro.php" method="POST" name="registro" id="reg">
                         <fieldset>
                             <legend>Datos personales y académicos</legend>
                             <p>Registre sus datos para el programa de tutorías.</p>
@@ -67,7 +67,7 @@
                             <label for="semestre">Semestre que cursas actualmente:</label>
                             <br>
                             <select name="semestre" id="sem">
-                                <option value="0">Elige tu semestre actual</option>
+                                <option value="0" disabled selected>Elige tu semestre actual:</option>
                                 <option value="1">Primero</option>
                                 <option value="2">Segundo</option>
                                 <option value="3">Tercero</option>
@@ -83,13 +83,24 @@
                             <label for="carrera">Carrera en la que estas inscrito:</label>
                             <br>
                             <select id="carrera" name="carrera" required>
-                                <option value="0">Elige tu carrera:</option>
+                                <option value="zzz" disabled selected>Elige tu carrera:</option>
                                 <option value="ISC">Ingeniería en Sistemas Computacionales</option>
                                 <option value="IIA">Ingeniería en Inteligencia Artificial</option>
                                 <option value="LCD">Licenciatura en Ciencia de Datos</option>
                             </select>
                             <br>
                             <label for="tipoTutoria">Elige el tipo de tutoría:</label>
+                            <br>
+                            <select id="tipoTutoria" name="tipoTutoria" required>
+                                <option value="zzz" disabled selected>Elige el tipo de tutoría:</option>
+                                <option value="IND">Tutoría individual</option>
+                                <option value="GRU">Tutoría grupal</option>
+                                <option value="REC">Tutoría de recuperación</option>
+                                <option value="REG">Tutoría de regularización</option>
+                                <option value="PAR">Tutoría entre pares</option>
+                            </select>
+                            <br>
+                            <label for="genTutor">Elige el género de tu tutor:</label>
                             <br>
                             <input type="radio" name="genTutor" id="hombre" value="H"> Hombre
                             <input type="radio" name="genTutor" id="mujer" value="M"> Mujer
@@ -127,6 +138,11 @@
           </footer>
           
         <!-- S C R I P T S -->
+        <script>
+            function cleanForm() {
+              document.getElementById("reg").reset();
+            }
+          </script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>

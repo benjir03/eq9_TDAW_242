@@ -138,71 +138,73 @@
             </button>
         </div>
 
+        
+          <section class="contenido-principal">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-12 col-12">
+                          <div class="about-img">
+                              <br><br><img src="imgs/about.png" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                      <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                          <div class="about-text text-white">
+                            <h2>Objetivo general</h2>
+                              <p>Guiar las acciones tutoriales en las Unidades Académicas; así como considerar la
+                                  planeación, organización, seguimiento y evaluación como los ejes rectores para el
+
+                                  planteamiento de acciones de alto impacto, que incidan en el proceso de acompañamiento
+                                  de tipo académico y personal del alumno, contribuyendo en su formación
+                                  integral durante su trayectoria escolar, orientado a fortalecer tanto el aprendizaje
+                                  como el desarrollo de valores, actitudes, hábitos y habilidades, mejorando al mismo
+                                  tiempo, la práctica docente.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+
+          <section class=" section-spacing contenido-principal" >
+              <h2 class="title-center">Misión y Visión</h2>
+              <div class="container px-4 text-center">
+                  <div class="row gx-5">
+                      <div class="col">
+                          <div class="p-3 contenido-vm"> 
+                          <h3>Misión</h3>
+                              <p>La Secretaría Académica tiene el propósito de proponer, implantar y evaluar las políticas que organizan
+                                  el proceso de acompañamiento de tipo personal y académico
+                                  a los alumnos de los niveles Medio Superior y Superior  para contribuir
+                                  en su formación integral,
+                                  durante su trayectoria escolar.
+                              </p>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="p-3 contenido-vm">
+                          <h3>Visión</h3>
+                              <p>
+                                  La Secretaría Académica con base en el Modelo Educativo Institucional, prevé la
+                                  consolidación de las formas de atención individual y grupal en los niveles Medio
+                                  Superior y Superior en sus diferentes modalidades, mediante tutorías y asesorías,
+                                  integradas en los procesos formativos que acompañen a los alumnos durante su
+                                  trayectoria escolar
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
         <main class="contenido-principal">
-            <section >
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 col-12">
-                            <div class="about-img">
-                                <br><br><img src="imgs/about.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
-                            <div class="about-text text-white">
-                             <h2>Objetivo general</h2>
-                                <p>Guiar las acciones tutoriales en las Unidades Académicas; así como considerar la
-                                    planeación, organización, seguimiento y evaluación como los ejes rectores para el
 
-                                    planteamiento de acciones de alto impacto, que incidan en el proceso de acompañamiento
-                                    de tipo académico y personal del alumno, contribuyendo en su formación
-                                    integral durante su trayectoria escolar, orientado a fortalecer tanto el aprendizaje
-                                    como el desarrollo de valores, actitudes, hábitos y habilidades, mejorando al mismo
-                                    tiempo, la práctica docente.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class=" section-spacing" >
-                <h2 class="title-center">Misión y Visión</h2>
-                <div class="container px-4 text-center">
-                    <div class="row gx-5">
-                        <div class="col">
-                            <div class="p-3 contenido-vm"> 
-                            <h3>Misión</h3>
-                                <p>La Secretaría Académica tiene el propósito de proponer, implantar y evaluar las políticas que organizan
-                                    el proceso de acompañamiento de tipo personal y académico
-                                    a los alumnos de los niveles Medio Superior y Superior  para contribuir
-                                    en su formación integral,
-                                    durante su trayectoria escolar.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3 contenido-vm">
-                            <h3>Visión</h3>
-                                <p>
-                                    La Secretaría Académica con base en el Modelo Educativo Institucional, prevé la
-                                    consolidación de las formas de atención individual y grupal en los niveles Medio
-                                    Superior y Superior en sus diferentes modalidades, mediante tutorías y asesorías,
-                                    integradas en los procesos formativos que acompañen a los alumnos durante su
-                                    trayectoria escolar
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="row row-cols-1 row-cols-md-2 g-4 container">
+          <div class="row row-cols-1 row-cols-md-2 g-4 container">
             <div class="col">
               <div class="card" id="individual">
                 <img src="../src/img_tutoria_individual.png" class="card-img-top custom-img-size" alt="...">
                 <div class="card-body">
-                  <a href="tutoria individual.html" class="btn btn-outline-dark">Tutoría individual</a> 
+                <a href="tutoria individual.html" class="btn btn-outline-dark">Tutoría individual</a> 
                 </div>
               </div>
             </div>
@@ -241,7 +243,7 @@
           </div>
    
         </main>
-
+        
         <!-- FOOTER -->
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <span class="text-body-secondary ps-3">&copy; 2024, TDAW - Equipo 9</span>
