@@ -138,8 +138,9 @@
             </button>
         </div>
 
-        
-          <section class="contenido-principal">
+
+        <main class="contenido-principal text-center">
+          <section class="">
               <div class="container">
                   <div class="row">
                       <div class="col-lg-4 col-md-12 col-12">
@@ -166,7 +167,7 @@
           </section>
 
 
-          <section class=" section-spacing contenido-principal" >
+          <section class=" section-spacing " >
               <h2 class="title-center">Misión y Visión</h2>
               <div class="container px-4 text-center">
                   <div class="row gx-5">
@@ -197,51 +198,55 @@
               </div>
           </section>
 
-        <main class="contenido-principal">
-
-          <div class="row row-cols-1 row-cols-md-2 g-4 container">
-            <div class="col">
-              <div class="card" id="individual">
-                <img src="../src/img_tutoria_individual.png" class="card-img-top custom-img-size" alt="...">
-                <div class="card-body">
-                <a href="tutoria individual.html" class="btn btn-outline-dark">Tutoría individual</a> 
+          <section class="container text-center">
+            <div class="row row-cols-1 row-cols-md-2 g-4 container">
+              <div class="col">
+                <div class="card" id="individual">
+                  <img src="imgs/img_tutotia_individual.jpg" class="card-img-top custom-img-size" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tutoria individual</h5>
+                    <a href="tutoria individual.html" class="btn btn-outline-dark">ver mas ..</a> 
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" id="grupal">
+                  <img src="imgs/tutoria_grupal.jpg" class="card-img-top custom-img-size" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tutoria grupal</h5>
+                    <a href="tutoria_grupal.html" class="btn btn-outline-dark">ver mas ..</a> 
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" id="recuper">
+                  <img src="imgs/img_tutoria_recuperacionacademica.jpg" class="card-img-top custom-img-size" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tutoria de recuperacion</h5>
+                    <a href="tutoria_recuperacion.html" class="btn btn-outline-dark">ver mas ..</a>  
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" id="regular">
+                  <img src="imgs/tutoria_regularizacion.jpg" class="card-img-top custom-img-size" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tutoria de regularizacion</h5>
+                    <a href="tutoria_regularizacion.html" class="btn btn-outline-dark">ver mas ..</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" id="pares">
+                  <img src="imgs/tutoria_pares.jpg" class="card-img-top custom-img-size" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tutoria pares</h5>
+                    <a href="tutoria_pares.html" class="btn btn-outline-dark">ver mas ..</a> 
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card" id="grupal">
-                <img src="../src/img_tutotia_grupal.png" class="card-img-top custom-img-size" alt="...">
-                <div class="card-body">
-                  <a href="tutoria_grupal.html" class="btn btn-outline-dark">Tutoria de grupal</a> 
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card" id="recuper">
-                <img src="../src/img_tutoria_recuperacionacademica.png" class="card-img-top custom-img-size" alt="...">
-                <div class="card-body">
-                  <a href="tutoria_recuperacion.html" class="btn btn-outline-dark">Tutoria de recuperacion</a>  
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card" id="regular">
-                <img src="../src/tutoria_regularizacion.png" class="card-img-top custom-img-size" alt="...">
-                <div class="card-body">
-                  <a href="tutoria_regularizacion.html" class="btn btn-outline-dark">Tutoria de regularizacion</a>             
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card" id="pares">
-                <img src="../src/img_tutoria_pares.png" class="card-img-top custom-img-size" alt="...">
-                <div class="card-body">
-                  <a href="tutoria_pares.html" class="btn btn-outline-dark">Tutoria entre pares</a>   
-                </div>
-              </div>
-            </div>
-          </div>
-   
+          </section>
         </main>
         
         <!-- FOOTER -->

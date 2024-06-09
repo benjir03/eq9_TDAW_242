@@ -51,6 +51,8 @@
 .contenido-principal{
     background-color: var(--bs-primary-rgb);
     color: var(--bs-white);
+    padding: 20px;
+    padding-bottom: 100px;
 }
 
 .contenido-vm{
