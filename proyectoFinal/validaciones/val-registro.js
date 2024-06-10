@@ -21,15 +21,15 @@ form.addEventListener("submit", e =>{
         alertas += 'La boleta debe ser de 10 dígitos<br>';
         entrar = true;
     }
-    if(nombre.value.trim() === '' || nombre.value.length > 50 || !/^[a-zA-Z\s]+$/.test(nombre.value)){
+    if(nombre.value.trim() === '' || nombre.value.length > 50 || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(nombre.value)){
         alertas += 'El nombre solo puede tener un máximo de 50 letras<br>';
         entrar = true;
     }
-    if(apPat.value.trim() === '' || apPat.value.length > 50 || !/^[a-zA-Z\s]+$/.test(apPat.value)){
+    if(apPat.value.trim() === '' || apPat.value.length > 50 || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(apPat.value)){
         alertas += 'El apellido paterno solo puede tener un máximo de 50 letras<br>';
         entrar = true;
     }
-    if(apMat.value.trim() === '' || apMat.value.length > 50 || !/^[a-zA-Z\s]+$/.test(apMat.value)){
+    if(apMat.value.trim() === '' || apMat.value.length > 50 || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(apMat.value)){
         alertas += 'El apellido materno solo puede tener un máximo de 50 letras<br>';
         entrar = true;
     }
