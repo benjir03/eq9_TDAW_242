@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>ADMIN</title>
+        <title>Ingresa | Programa de tutorías ESCOM</title>
         <meta name="author" content="Equipo 9">
         
         <!-- S T Y L E S -->
@@ -26,8 +26,10 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="../index.php" class="nav-link px-2 text-secondary">Inicio</a></li>
                     <li><a href="formularioRegistro.php" class="nav-link px-2 text-secondary">Registro</a></li>
-                    <li><a href="" class="nav-link px-2 text-white">Admin</a></li>
+                    <li><a href="" class="nav-link px-2 text-white">Inicio de sesión</a></li>
+                    <!--
                     <li><a href="" class="nav-link px-2 text-secondary">Acuse PDF</a></li>
+                    -->
                 </ul>
                 <!--
                 <button type="button" class="btn btn-outline-light me-2">Login</button>
@@ -41,7 +43,7 @@
                 <div class="contenedorFormSesion">
                     <form action="../php/login.php" method="POST" name="inicioSesion" id="iSesion">
                         <fieldset>
-                            <legend>Inicio de sesión como administrador</legend>
+                            <legend>Inicio de sesión</legend>
                             <input class="campo-texto" type="email" name="correoSesion" id="correo" placeholder="Ingresa tu correo">
                             <br>
                             <input class="campo-texto" type="password" name="contraSesion" id="contra" placeholder="Ingresa tu contraseña">
