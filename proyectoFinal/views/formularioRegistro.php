@@ -6,7 +6,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <title>Registro | Programa de tutorías ESCOM</title>
         <meta name="author" content="Equipo 9">
         
@@ -26,7 +26,7 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="../index.php" class="nav-link px-2 text-secondary">Inicio</a></li>
                     <li><a href="formularioRegistro.php" class="nav-link px-2 text-white">Registro</a></li>
-                    <li><a href="inicioSesion.php" class="nav-link px-2 text-secondary">Inicio de sesión</a></li>
+                    <li><a href="inicioSesionAlum.php" class="nav-link px-2 text-secondary">Inicio de sesión</a></li>
                     <!--
                     <li><a href="" class="nav-link px-2 text-secondary">Acuse PDF</a></li>
                     -->

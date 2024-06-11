@@ -1,0 +1,5 @@
+@import url("styles-inicioSesion.css");
+
+.fondoSesion{
+    background-image: url("../imgs/loginAlumnos.jpg");
+}
