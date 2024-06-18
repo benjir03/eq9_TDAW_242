@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>.:: Programa de tutorías ::.</title>
+        <title>Inicio | Programa de tutorías ESCOM</title>
         <meta name="author" content="Equipo 9">
         
         <!-- S T Y L E S -->
@@ -26,8 +26,10 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="index.html" class="nav-link px-2 text-white">Inicio</a></li>
                     <li><a href="views/formularioRegistro.php" class="nav-link px-2 text-secondary">Registro</a></li>
-                    <li><a href="views/inicioSesion.php" class="nav-link px-2 text-secondary">Admin</a></li>
+                    <li><a href="views/inicioSesionAlum.php" class="nav-link px-2 text-secondary">Inicio de sesión</a></li>
+                    <!--
                     <li><a href="" class="nav-link px-2 text-secondary">Acuse PDF</a></li>
+                    -->
                 </ul>
                 <!--
                 <button type="button" class="btn btn-outline-light me-2">Login</button>
@@ -35,56 +37,64 @@
             </div>
         </header>
 
-        <div class= "text-center text-bg-dark">
+        <section>
+            <div class= "text-center text-bg-dark">
                 <div class="row">
-                  <div class="col">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backpack" width="68" height="68" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M5 18v-6a6 6 0 0 1 6 -6h2a6 6 0 0 1 6 6v6a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3z" />
-                        <path d="M10 6v-1a2 2 0 1 1 4 0v1" />
-                        <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
-                        <path d="M11 10h2" />
-                      </svg>
-                    <p>Escolarizada</p>
-                  </div>
-                  <div class="col">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-laptop" width="68" height="68" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 19l18 0" />
-                    <path d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
-                  </svg>
-                  <p>No escolarizada</p>   
-                  </div>
-                  <div class="col">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book-download" width="68" height="68" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 20h-6a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12v5" />
-                        <path d="M13 16h-7a2 2 0 0 0 -2 2" />
-                        <path d="M15 19l3 3l3 -3" />
-                        <path d="M18 22v-9" />
-                      </svg>
-                    <p>Mixta</p>
-                  </div>
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backpack" width="68" height="68" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 18v-6a6 6 0 0 1 6 -6h2a6 6 0 0 1 6 6v6a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3z" />
+                            <path d="M10 6v-1a2 2 0 1 1 4 0v1" />
+                            <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+                            <path d="M11 10h2" />
+                        </svg>
+                        
+                        <p>Escolarizada</p>
+                    </div>
+                    
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-laptop" width="68" height="68" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 19l18 0" />
+                            <path d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
+                        </svg>
+                        
+                        <p>No escolarizada</p>   
+                    </div>
+                    
+                    <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book-download" width="68" height="68" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 20h-6a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12v5" />
+                            <path d="M13 16h-7a2 2 0 0 0 -2 2" />
+                            <path d="M15 19l3 3l3 -3" />
+                            <path d="M18 22v-9" />
+                        </svg>
+                        
+                        <p>Mixta</p>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
-
-        <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imgs/0.jpg" class="d-block w-100" alt="carousel" title="carousel">
-                    <div class="carousel-caption">
-                        <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                        <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/1.jpg" class="d-block w-100" alt="carousel" title="carousel">
-                    <div class="carousel-caption">
-                        <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                        <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
-                    </div>
-                </div>
+          <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="imgs/0.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                      
+                      <div class="carousel-caption">
+                          <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
+                          <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
+                      </div>
+                  </div>
+                  
+                  <div class="carousel-item">
+                      <img src="imgs/1.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                      
+                      <div class="carousel-caption">
+                          <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
+                          <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
+                      </div>
+                  </div>
                 <div class="carousel-item">
                     <img src="imgs/2.jpg" class="d-block w-100" alt="carousel" title="carousel">
                     <div class="carousel-caption">
@@ -140,18 +150,18 @@
 
 
         <main class="contenido-principal text-center">
-          <section class="">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-4 col-md-12 col-12">
-                          <div class="about-img">
-                              <br><br><img src="imgs/about.png" class="img-fluid" alt="">
-                          </div>
-                      </div>
-                      <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
-                          <div class="about-text text-white">
-                            <h2>Objetivo general</h2>
-                              <p>Guiar las acciones tutoriales en las Unidades Académicas; así como considerar la
+            <section class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-12">
+                            <div class="about-img">
+                                <br><br><img src="imgs/about.png" class="img-fluid" alt="">
+                            </div>
+                       </div>
+                        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                            <div class="about-text text-white">
+                                <h2>Objetivo general</h2>
+                                <p>Guiar las acciones tutoriales en las Unidades Académicas; así como considerar la
                                   planeación, organización, seguimiento y evaluación como los ejes rectores para el
 
                                   planteamiento de acciones de alto impacto, que incidan en el proceso de acompañamiento
