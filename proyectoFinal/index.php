@@ -240,7 +240,7 @@
                 <div class="card" id="pares">
                   <img src="imgs/tutoria_pares.jpg" class="card-img-top custom-img-size" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Tutoria pares</h5>
+                    <h5 class="card-title">Tutoria de regularizacion</h5>
                     <a href="tutoria_pares.html" class="btn btn-outline-dark">ver mas ..</a> 
                   </div>
                 </div>
