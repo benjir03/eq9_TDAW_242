@@ -21,7 +21,16 @@
 
         // Obtener el nombre de usuario
         $row = mysqli_fetch_assoc($validar_login);
-        $_SESSION["username"] = $row['nombre'];
+        $_SESSION["boleta"] = $row['boleta'];
+        $_SESSION["nombre"] = $row['nombre'];
+        $_SESSION["apPat"] = $row['apPat'];
+        $_SESSION["apMat"] = $row['apMat'];
+        $_SESSION["telefono"] = $row['telefono'];
+        $_SESSION["semestre"] = $row['semestre'];
+        $_SESSION["carrera"] = $row['carrera'];
+        $_SESSION["tipoTutoria"] = $row['tipoTutoria'];
+        $_SESSION["genTutor"] = $row['genTutor'];
+        $_SESSION["nombreTutor"] = $row['nombreTutor'];
 
         // Redirigir al usuario a la página restringida
         header("location: ../restringido/log_home_alum.php");

@@ -8,6 +8,9 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+
+    padding-top: 60px;
+    /*min-height: 95vh;*/
 }
 
 .contenedorFormSesion{
@@ -15,6 +18,14 @@
     padding: 25px;
     margin: auto;
     border-radius: 20px;
+}
+
+.contDatos{
+    border-radius: 6px;
+}
+
+.subrayar{
+    text-decoration: underline;
 }
 
 @media (max-width:600px){

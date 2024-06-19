@@ -1,8 +1,18 @@
 <?php
     session_start();
 
-    if(isset($_SESSION["username"])) {
-        $username_session = $_SESSION["username"];
+    if(isset($_SESSION["nombre"])) {
+        $boleta_sesion =  $_SESSION["boleta"];
+        $nombre_sesion = $_SESSION["nombre"];
+        $apPat_sesion = $_SESSION["apPat"];
+        $apMat_sesion = $_SESSION["apMat"];
+        $telefono_sesion = $_SESSION["telefono"];
+        $semestre_sesion = $_SESSION["semestre"];
+        $carrera_sesion = $_SESSION["carrera"];
+        $tipoTutoria_sesion = $_SESSION["tipoTutoria"];
+        $genTutor_sesion = $_SESSION["genTutor"];
+        $nombreTutor_sesion = $_SESSION["nombreTutor"];
+
     }
     else {
         header("location: ../views/inicioSesionAlum.php");
@@ -32,8 +42,6 @@
                 <a href="../index.php" class="nav-brand"><img src="../imgs/escudoESCOM.png" alt="Logo ESCOM" title="Logo ESCOM" class="headerImg"></a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="../index.php" class="nav-link px-2 text-secondary">Inicio</a></li>
-                    <li><a href="" class="nav-link px-2 text-secondary">Registro</a></li>
                     <li><a href="log_home_alum.php" class="nav-link px-2 text-white">Alumno</a></li>
                 </ul>
                 <button type="button" class="btn btn-outline-light me-2" onclick="cerrarSesion()">Cerrar sesión</button>
@@ -42,9 +50,77 @@
 
         <!-- MAIN -->
         <main>
-            <div class="fondoSesion container-fluid d-flex justify-content-center align-items-center row-full-height">
+            <div class="fondoSesion container-fluid d-flex justify-content-center align-items-center">
                 <div class="contenedorFormSesion">
-                    <h1>BIENVENIDO(A) <?php echo "$username_session"?></h1>
+                    <h1>Hola <?php echo "$nombre_sesion"?></h1>
+
+                    <hr class=" border-secondary border-3 opacity-75">
+                    <!--
+                    <div class="contenedorSelectorTutor">
+                        <form action="">
+                            <label for="">No has elegido tu tutor, elige uno:</label>
+                            <br>
+                            <select name="tutor" id="tutor">
+                                <option value="---" disabled selected>Elige un tutor
+                            </select>
+                            <br>
+                            <button class="mt-3 btn btn-primary">Elegir tutor</button>
+                        </form>
+                    </div>
+                    -->
+
+                    <div class="contenedorDatos">
+                        <p class="subrayar">Mostrar tus datos.</p>
+
+                        <h3>Tus datos:</h3>
+
+                        <p class="fw-bold p-0 m-0 ps-1">Boleta:</p>
+                        <div class="contDatos w-100 bg-light border border-gray">
+                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$boleta_sesion"?></p>
+                        </div>
+
+                        <p class="fw-bold p-0 m-0 ps-1">Nombre:</p>
+                        <div class="contDatos w-100 bg-light border border-gray">
+                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$nombre_sesion"?></p>
+                        </div>
+
+                        <p class="fw-bold p-0 m-0 ps-1">Apellido paterno:</p>
+                        <div class="contDatos w-100 bg-light border border-gray">
+                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$apPat_sesion"?></p>
+                        </div>
+
+                        <p class="fw-bold p-0 m-0 ps-1">Apellido materno:</p>
+                        <div class="contDatos w-100 bg-light border border-gray">
+                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$apMat_sesion"?></p>
+                        </div>
+
+                        <p class="fw-bold p-0 m-0 ps-1">Teléfono:</p>
+                        <div class="contDatos w-100 bg-light border border-gray">
+                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$telefono_sesion"?></p>
+                        </div>
+
+                        <p class="fw-bold p-0 m-0 ps-1">Semestre:</p>
+                        <div class="contDatos w-100 bg-light border border-gray">
+                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$semestre_sesion"?></p>
+                        </div>
+
+                        <p class="fw-bold p-0 m-0 ps-1">Carrera:</p>
+                        <div class="contDatos w-100 bg-light border border-gray">
+                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$carrera_sesion"?></p>
+                        </div>
+
+                        <p class="fw-bold p-0 m-0 ps-1">Tipo de tutoría:</p>
+                        <div class="contDatos w-100 bg-light border border-gray">
+                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$tipoTutoria_sesion"?></p>
+                        </div>
+
+                        <p class="fw-bold p-0 m-0 ps-1">Tutor:</p>
+                        <div class="contDatos w-100 bg-light border border-gray">
+                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$nombreTutor_sesion"?></p>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </main>
