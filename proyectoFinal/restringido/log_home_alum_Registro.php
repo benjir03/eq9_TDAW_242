@@ -12,7 +12,15 @@
         $tipoTutoria_sesion = $_SESSION["tipoTutoria"];
         $genTutor_sesion = $_SESSION["genTutor"];
         $nombreTutor_sesion = $_SESSION["nombreTutor"];
+        $correo_sesion = $_SESSION["correo"];
 
+        // Aquí determinas si la variable debe ser verdadera o falsa
+        $showElement = $_SESSION["correo"]; // O false, dependiendo de tu lógica
+        
+        // Convierte la variable PHP a una variable JavaScript
+        echo "<script type='text/javascript'>
+            var showElement = " . ($showElement ? 'true' : 'false') . ";
+            </script>";
     }
     else {
         header("location: ../views/inicioSesionAlum.php");
@@ -30,7 +38,7 @@
         
         <!-- S T Y L E S -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="../estilos/styles-log_home_alum.css">
+        <link rel="stylesheet" href="../estilos/styles-log_home_alum_Registro.css">
 
         <!-- S C R I P T S -->
     </head>
@@ -57,7 +65,7 @@
 
                     <hr class=" border-secondary border-3 opacity-75">
                     
-                    <div class="contenedorSelectorTutor">
+                    <div class="contenedorSelectorTutor" id="contenedorSelectorTutor">
                         <p class="fw-bold m-0">Completa tu registro</p>
                         <form action="">
                             <label for="tipoTutoria">Elige el tipo de tutoría:</label>
@@ -86,13 +94,18 @@
                         </form>
                     </div>
                     
-
-                    <div class="contenedorDatos">
+<!--
+                    <div class="contenedorDatos" id="contenedorDatos">
                         <h3>Tus datos:</h3>
 
                         <p class="fw-bold p-0 m-0 ps-1">Boleta:</p>
                         <div class="contDatos w-100 bg-light border border-gray">
                             <p class="text-secondary p-0 m-0 ps-1"><?php echo "$boleta_sesion"?></p>
+                        </div>
+
+                        <p class="fw-bold p-0 m-0 ps-1">Correo:</p>
+                        <div class="contDatos w-100 bg-light border border-gray">
+                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$correo_sesion"?></p>
                         </div>
 
                         <p class="fw-bold p-0 m-0 ps-1">Nombre:</p>
@@ -135,10 +148,11 @@
                             <p class="text-secondary p-0 m-0 ps-1"><?php echo "$nombreTutor_sesion"?></p>
                         </div>
 
-                    </div>
+                        <div class="botonPDF row">
+                            <button class="mt-3 btn btn-primary">Imprimir acuse</button>
+                        </div>
+-->
 
-                    <div class="botonPDF row">
-                        <button class="mt-3 btn btn-primary">Imprimir acuse</button>
                     </div>
 
                 </div>

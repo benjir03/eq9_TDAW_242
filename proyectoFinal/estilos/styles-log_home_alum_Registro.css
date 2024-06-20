@@ -1,0 +1,47 @@
+@import url(styles-general.css);
+
+.fondoSesion{
+    background-image: url("../imgs/loginAlumnos.jpg");
+    height: 500px;
+    background-size: cover;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    padding-top: 60px;
+    /*min-height: 95vh;*/
+}
+
+.contenedorFormSesion{
+    background-color: white;
+    padding: 25px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.contDatos{
+    border-radius: 6px;
+}
+
+.botonPDF{
+    align-items: center;
+}
+
+@media (max-width:600px){
+    .contenedorFormSesion{
+        width: 50%;
+    }
+}
+
+@media (min-width: 600px){
+    .contenedorFormSesion{
+        width: 50%;
+    }
+}
+
+@media (min-width: 951px) {
+    .contenedorFormSesion{
+        width: 475px;
+    }
+}

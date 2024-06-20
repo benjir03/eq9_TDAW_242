@@ -33,8 +33,14 @@
         $_SESSION["nombreTutor"] = $row['nombreTutor'];
 
         // Redirigir al usuario a la página restringida
-        header("location: ../restringido/log_home_alum.php");
-        exit();
+        if($_SESSION["nomreTutor"] == "") {
+            header("location: ../restringido/log_home_alum_Registro.php");
+            exit();
+        } else {
+            header("location: ../restringido/log_home_alum_Datos.php");
+            exit();
+        }
+
     } else {
         echo "Correo o contraseña incorrectos.";
     }
