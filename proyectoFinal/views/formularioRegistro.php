@@ -47,7 +47,7 @@
                     <form action="../php/registro.php" method="POST" name="registro" id="reg">
                         <fieldset>
                             <legend>Datos personales y académicos</legend>
-                            <p>Registre sus datos para el programa de tutorías.</p>
+                            <p>Registra tus datos para el programa de tutorías.</p>
 
                             <label for="boleta">Boleta:</label>
                             <br>
@@ -55,23 +55,32 @@
                             <br>
                             <label for="nombre">Nombre(s):</label>
                             <br>
-                            <input class="campo-texto" type="text" name="nombre" id="nombre">
+                            <input class="campo-texto" type="text" name="nombre" id="nombre" required>
                             <br>
                             <label for="apPat">Apellido paterno:</label>
                             <br>
-                            <input class="campo-texto" type="text" name="apellidoPaterno" id="apPat">
+                            <input class="campo-texto" type="text" name="apellidoPaterno" id="apPat" required>
                             <br>
                             <label for="apMat">Apellido materno:</label>
                             <br>
-                            <input class="campo-texto" type="text" name="apellidoMaterno" id="apMat">
+                            <input class="campo-texto" type="text" name="apellidoMaterno" id="apMat" required>
                             <br>
                             <label for="tel">No. de teléfono:</label>
                             <br>
-                            <input class="campo-texto" type="tel" name="telefono" id="tel">
+                            <input class="campo-texto" type="tel" name="telefono" id="tel" required>
+                            <br>
+                            <label for="carrera">Carrera en la que estas inscrito:</label>
+                            <br>
+                            <select id="carrera" name="carrera" required>
+                                <option value="zzz" disabled selected>Elige tu carrera:</option>
+                                <option value="ISC">Ingeniería en Sistemas Computacionales</option>
+                                <option value="IIA">Ingeniería en Inteligencia Artificial</option>
+                                <option value="LCD">Licenciatura en Ciencia de Datos</option>
+                            </select>
                             <br>
                             <label for="semestre">Semestre que cursas actualmente:</label>
                             <br>
-                            <select name="semestre" id="sem">
+                            <select name="semestre" id="semestre" required>
                                 <option value="0" disabled selected>Elige tu semestre actual:</option>
                                 <option value="1">Primero</option>
                                 <option value="2">Segundo</option>
@@ -84,31 +93,6 @@
                                 <option value="9">Noveno</option>
                                 <option value="10">Décimo</option>
                             </select>
-                            <br>
-                            <label for="carrera">Carrera en la que estas inscrito:</label>
-                            <br>
-                            <select id="carrera" name="carrera" required>
-                                <option value="zzz" disabled selected>Elige tu carrera:</option>
-                                <option value="ISC">Ingeniería en Sistemas Computacionales</option>
-                                <option value="IIA">Ingeniería en Inteligencia Artificial</option>
-                                <option value="LCD">Licenciatura en Ciencia de Datos</option>
-                            </select>
-                            <br>
-                            <label for="tipoTutoria">Elige el tipo de tutoría:</label>
-                            <br>
-                            <select id="tipoTutoria" name="tipoTutoria" required>
-                                <option value="zzz" disabled selected>Elige el tipo de tutoría:</option>
-                                <option value="IND">Tutoría individual</option>
-                                <option value="GRU">Tutoría grupal</option>
-                                <option value="REC">Tutoría de recuperación</option>
-                                <option value="REG">Tutoría de regularización</option>
-                                <option value="PAR">Tutoría entre pares</option>
-                            </select>
-                            <br>
-                            <label for="genTutor">Elige el género de tu tutor:</label>
-                            <br>
-                            <input type="radio" name="genTutor" id="hombre" value="H"> Hombre
-                            <input type="radio" name="genTutor" id="mujer" value="M"> Mujer
                         </fieldset>
                         <br>
 
@@ -118,11 +102,11 @@
 
                             <label for="correo">Correo institucional:</label>
                             <br>
-                            <input class="campo-texto" type="email" name="correo" id="correo">
+                            <input class="campo-texto" type="email" name="correo" id="correo" requiered>
                             <br>
                             <label for="contra">Contraseña:</label>
                             <br>
-                            <input class="campo-texto" type="password" name="contra" id="contra">
+                            <input class="campo-texto" type="password" name="contra" id="contra" required>
                         </fieldset>
                         <br>
                         <p class="alertas" id="alertas"></p>

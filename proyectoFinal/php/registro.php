@@ -10,16 +10,14 @@
     $apPat = mysqli_real_escape_string($conn, $_POST['apellidoPaterno']);
     $apMat = mysqli_real_escape_string($conn, $_POST['apellidoMaterno']);
     $tel = mysqli_real_escape_string($conn, $_POST['telefono']);
-    $semestre = mysqli_real_escape_string($conn, $_POST['semestre']);
     $carrera = mysqli_real_escape_string($conn, $_POST['carrera']);
-    $tipoTutoria = mysqli_real_escape_string($conn, $_POST['tipoTutoria']);
-    $genTutor = mysqli_real_escape_string($conn, $_POST['genTutor']);
+    $semestre = mysqli_real_escape_string($conn, $_POST['semestre']);
     $correo = mysqli_real_escape_string($conn, $_POST['correo']);
     $contra = mysqli_real_escape_string($conn, $_POST['contra']);
 
     $nombreTutor = '';
 
-    $query = "INSERT INTO alum (boleta, nombre, apPat, apMat, telefono, semestre, carrera, tipoTutoria, genTutor, nombreTutor, correo, contra) VALUES ('$boleta', '$nombre', '$apPat', '$apMat', '$tel', '$semestre', '$carrera', '$tipoTutoria', '$genTutor', '$nombreTutor', '$correo', '$contra')";
+    $query = "INSERT INTO alum (boleta, nombre, apPat, apMat, telefono, semestre, carrera, correo, contra) VALUES ('$boleta', '$nombre', '$apPat', '$apMat', '$tel', '$semestre', '$carrera', '$tipoTutoria', '$genTutor', '$nombreTutor', '$correo', '$contra')";
 
     echo "Query: $query"; // Mensaje de depuración
 

@@ -24,8 +24,8 @@
     border-radius: 6px;
 }
 
-.subrayar{
-    text-decoration: underline;
+.botonPDF{
+    align-items: center;
 }
 
 @media (max-width:600px){

@@ -31,7 +31,8 @@
         <!-- S T Y L E S -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="../estilos/styles-log_home_alum.css">
-        
+
+        <!-- S C R I P T S -->
     </head>
 
     <body>
@@ -55,23 +56,38 @@
                     <h1>Hola <?php echo "$nombre_sesion"?></h1>
 
                     <hr class=" border-secondary border-3 opacity-75">
-                    <!--
+                    
                     <div class="contenedorSelectorTutor">
+                        <p class="fw-bold m-0">Completa tu registro</p>
                         <form action="">
-                            <label for="">No has elegido tu tutor, elige uno:</label>
+                            <label for="tipoTutoria">Elige el tipo de tutoría:</label>
+                            <br>
+                            <select id="tipoTutoria" name="tipoTutoria" required>
+                                <option value="zzz" disabled selected>Elige el tipo de tutoría:</option>
+                                <option value="IND">Tutoría individual</option>
+                                <option value="GRU">Tutoría grupal</option>
+                                <option value="REC">Tutoría de recuperación</option>
+                                <option value="REG">Tutoría de regularización</option>
+                                <option value="PAR">Tutoría entre pares</option>
+                            </select>
+                            <br>
+                            <label for="genTutor">Elige el género de tu tutor:</label>
+                            <br>
+                            <input type="radio" name="genTutor" id="hombre" value="H"> Hombre
+                            <input type="radio" name="genTutor" id="mujer" value="M"> Mujer
+                            <br>
+                            <label for="">Elige a tu tutor:</label>
                             <br>
                             <select name="tutor" id="tutor">
                                 <option value="---" disabled selected>Elige un tutor
                             </select>
                             <br>
-                            <button class="mt-3 btn btn-primary">Elegir tutor</button>
+                            <button class="mt-3 btn btn-primary">Completar registro</button>
                         </form>
                     </div>
-                    -->
+                    
 
                     <div class="contenedorDatos">
-                        <p class="subrayar">Mostrar tus datos.</p>
-
                         <h3>Tus datos:</h3>
 
                         <p class="fw-bold p-0 m-0 ps-1">Boleta:</p>
@@ -119,6 +135,10 @@
                             <p class="text-secondary p-0 m-0 ps-1"><?php echo "$nombreTutor_sesion"?></p>
                         </div>
 
+                    </div>
+
+                    <div class="botonPDF row">
+                        <button class="mt-3 btn btn-primary">Imprimir acuse</button>
                     </div>
 
                 </div>
