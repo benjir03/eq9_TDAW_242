@@ -214,8 +214,8 @@
                 <div class="card">
                   <img src="imgs/img_tutotia_individual.jpg" class="card-img-top custom-img-size" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Tutoria individual</h5>
-                    <a href="#tutoria_individual" class="btn btn-outline-dark">ver mas ..</a> 
+                    <h5 class="card-title">Tutoría individual</h5>
+                    <a href="#tutoria_individual" class="btn btn-outline-dark">Saber más...</a> 
                   </div>
                 </div>
               </div>
@@ -223,8 +223,8 @@
                 <div class="card" >
                   <img src="imgs/tutoria_grupal.jpg" class="card-img-top custom-img-size" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Tutoria grupal</h5>
-                    <a href="#tutoria_grupal" class="btn btn-outline-dark">ver mas ..</a> 
+                    <h5 class="card-title">Tutoría grupal</h5>
+                    <a href="#tutoria_grupal" class="btn btn-outline-dark">Saber más...</a> 
                   </div>
                 </div>
               </div>
@@ -232,8 +232,8 @@
                 <div class="card" >
                   <img src="imgs/img_tutoria_recuperacionacademica.jpg" class="card-img-top custom-img-size" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Tutoria de recuperacion</h5>
-                    <a href="#tutoria_recuperacion" class="btn btn-outline-dark">ver mas ..</a>  
+                    <h5 class="card-title">Tutoíia de recuperación</h5>
+                    <a href="#tutoria_recuperacion" class="btn btn-outline-dark">Saber más...</a>  
                   </div>
                 </div>
               </div>
@@ -241,8 +241,8 @@
                 <div class="card" >
                   <img src="imgs/tutoria_regularizacion.jpg" class="card-img-top custom-img-size" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Tutoria de regularizacion</h5>
-                    <a href="#tutoria_regularizacion" class="btn btn-outline-dark">ver mas ..</a>
+                    <h5 class="card-title">Tutoría de regularización</h5>
+                    <a href="#tutoria_regularizacion" class="btn btn-outline-dark">Saber más...</a>
                   </div>
                 </div>
               </div>
@@ -250,8 +250,8 @@
                 <div class="card" id="tutoria_pares">
                   <img src="imgs/tutoria_pares.jpg" class="card-img-top custom-img-size" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Tutoria de regularizacion</h5>
-                    <a href="tutoria_pares.html" class="btn btn-outline-dark">ver mas ..</a> 
+                    <h5 class="card-title">Tutoría de regularización</h5>
+                    <a href="tutoria_pares.html" class="btn btn-outline-dark">Saber más...</a> 
                   </div>
                 </div>
               </div>
@@ -260,7 +260,7 @@
         </main>
 
         <section id="tutoria_pares" class="container-md section-spacing">
-        <h2>Tutoria entre pares</h2>
+        <h2>Tutoría entre pares</h2>
         <hr class=" border-primary border-3 opacity-75">
             <p>
                 Esta actividad es desempeñada por alumnos de los Niveles Medio Superior o
@@ -290,7 +290,7 @@
         </section>
         
         <section id="tutoria_individual" class="container-md  section-spacing contenido-bw section-padding">
-            <h2>Tutoria individual</h2>
+            <h2>Tutoría individual</h2>
             <hr class=" border-primary border-3 opacity-75">
             <p>
             Es un acompañamiento académico, personal o ambos que se realiza a lo lar
@@ -339,7 +339,7 @@
         </section>
 
         <section id="tutoria_grupal" class="container-md section-spacing">
-            <h2>Tutoria grupal</h2>
+            <h2>Tutoría grupal</h2>
             <hr class=" border-primary border-3 opacity-75">
             <p>
                 Es la actividad de acompañamiento durante todo el periodo escolar, a un gru
@@ -388,7 +388,7 @@
         </section>
 
         <section id="tutoria_recuperacion" class="container-md section-spacing contenido-bw">
-            <h2>Tutoria de recuperacion academica</h2>
+            <h2>Tutoría de recuperación académica</h2>
             <hr class=" border-primary border-3 opacity-75">
             <p>
                 Es la acción dirigida a grupos de alumnos con dictamen de la Comisión de
@@ -457,7 +457,7 @@
         </section>
 
         <section id="tutoria_regularizacion" class="container-md section-spacing">
-            <h2>Tutoria regularizacion</h2>
+            <h2>Tutoría regularización</h2>
             <hr class=" border-primary border-3 opacity-75">
             <p>
                 Es la acción dirigida a un grupo de alumnos que requieren reafirmar conoci
