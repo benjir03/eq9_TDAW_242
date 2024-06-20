@@ -28,8 +28,8 @@
         <!-- HEADER -->
         <header class="p-3 text-bg-dark text-bg-light">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="../index.php" class="nav-brand"><img src="../imgs/escudoIPN.png" alt="Logo IPN" title="Logo IPN" class="headerImg"></a>
-                <a href="../index.php" class="nav-brand"><img src="../imgs/escudoESCOM.png" alt="Logo ESCOM" title="Logo ESCOM" class="headerImg"></a>
+                <img src="../imgs/escudoIPN.png" alt="Logo IPN" title="Logo IPN" class="headerImg">
+                <img src="../imgs/escudoESCOM.png" alt="Logo ESCOM" title="Logo ESCOM" class="headerImg">
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="log_home.php" class="nav-link px-2 text-white">Administrador</a></li>

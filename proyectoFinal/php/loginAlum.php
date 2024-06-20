@@ -33,7 +33,7 @@
         $_SESSION["nombreTutor"] = $row['nombreTutor'];
 
         // Redirigir al usuario a la página restringida
-        if($_SESSION["nomreTutor"] == "") {
+        if($_SESSION["nombreTutor"] == "") {
             header("location: ../restringido/log_home_alum_Registro.php");
             exit();
         } else {

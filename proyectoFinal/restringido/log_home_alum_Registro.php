@@ -13,14 +13,6 @@
         $genTutor_sesion = $_SESSION["genTutor"];
         $nombreTutor_sesion = $_SESSION["nombreTutor"];
         $correo_sesion = $_SESSION["correo"];
-
-        // Aquí determinas si la variable debe ser verdadera o falsa
-        $showElement = $_SESSION["correo"]; // O false, dependiendo de tu lógica
-        
-        // Convierte la variable PHP a una variable JavaScript
-        echo "<script type='text/javascript'>
-            var showElement = " . ($showElement ? 'true' : 'false') . ";
-            </script>";
     }
     else {
         header("location: ../views/inicioSesionAlum.php");
@@ -47,8 +39,8 @@
         <!-- HEADER -->
         <header class="p-3 text-bg-dark text-bg-light">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="../index.php" class="nav-brand"><img src="../imgs/escudoIPN.png" alt="Logo IPN" title="Logo IPN" class="headerImg"></a>
-                <a href="../index.php" class="nav-brand"><img src="../imgs/escudoESCOM.png" alt="Logo ESCOM" title="Logo ESCOM" class="headerImg"></a>
+                <img src="../imgs/escudoIPN.png" alt="Logo IPN" title="Logo IPN" class="headerImg">
+                <img src="../imgs/escudoESCOM.png" alt="Logo ESCOM" title="Logo ESCOM" class="headerImg">
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="log_home_alum.php" class="nav-link px-2 text-white">Alumno</a></li>
@@ -71,7 +63,7 @@
                             <label for="tipoTutoria">Elige el tipo de tutoría:</label>
                             <br>
                             <select id="tipoTutoria" name="tipoTutoria" required>
-                                <option value="zzz" disabled selected>Elige el tipo de tutoría:</option>
+                                <option value="" disabled selected>Elige el tipo de tutoría:</option>
                                 <option value="IND">Tutoría individual</option>
                                 <option value="GRU">Tutoría grupal</option>
                                 <option value="REC">Tutoría de recuperación</option>
@@ -87,72 +79,11 @@
                             <label for="">Elige a tu tutor:</label>
                             <br>
                             <select name="tutor" id="tutor">
-                                <option value="---" disabled selected>Elige un tutor
+                                <option value="" disabled selected>Elige un tutor
                             </select>
                             <br>
                             <button class="mt-3 btn btn-primary">Completar registro</button>
                         </form>
-                    </div>
-                    
-<!--
-                    <div class="contenedorDatos" id="contenedorDatos">
-                        <h3>Tus datos:</h3>
-
-                        <p class="fw-bold p-0 m-0 ps-1">Boleta:</p>
-                        <div class="contDatos w-100 bg-light border border-gray">
-                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$boleta_sesion"?></p>
-                        </div>
-
-                        <p class="fw-bold p-0 m-0 ps-1">Correo:</p>
-                        <div class="contDatos w-100 bg-light border border-gray">
-                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$correo_sesion"?></p>
-                        </div>
-
-                        <p class="fw-bold p-0 m-0 ps-1">Nombre:</p>
-                        <div class="contDatos w-100 bg-light border border-gray">
-                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$nombre_sesion"?></p>
-                        </div>
-
-                        <p class="fw-bold p-0 m-0 ps-1">Apellido paterno:</p>
-                        <div class="contDatos w-100 bg-light border border-gray">
-                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$apPat_sesion"?></p>
-                        </div>
-
-                        <p class="fw-bold p-0 m-0 ps-1">Apellido materno:</p>
-                        <div class="contDatos w-100 bg-light border border-gray">
-                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$apMat_sesion"?></p>
-                        </div>
-
-                        <p class="fw-bold p-0 m-0 ps-1">Teléfono:</p>
-                        <div class="contDatos w-100 bg-light border border-gray">
-                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$telefono_sesion"?></p>
-                        </div>
-
-                        <p class="fw-bold p-0 m-0 ps-1">Semestre:</p>
-                        <div class="contDatos w-100 bg-light border border-gray">
-                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$semestre_sesion"?></p>
-                        </div>
-
-                        <p class="fw-bold p-0 m-0 ps-1">Carrera:</p>
-                        <div class="contDatos w-100 bg-light border border-gray">
-                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$carrera_sesion"?></p>
-                        </div>
-
-                        <p class="fw-bold p-0 m-0 ps-1">Tipo de tutoría:</p>
-                        <div class="contDatos w-100 bg-light border border-gray">
-                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$tipoTutoria_sesion"?></p>
-                        </div>
-
-                        <p class="fw-bold p-0 m-0 ps-1">Tutor:</p>
-                        <div class="contDatos w-100 bg-light border border-gray">
-                            <p class="text-secondary p-0 m-0 ps-1"><?php echo "$nombreTutor_sesion"?></p>
-                        </div>
-
-                        <div class="botonPDF row">
-                            <button class="mt-3 btn btn-primary">Imprimir acuse</button>
-                        </div>
--->
-
                     </div>
 
                 </div>

@@ -9,8 +9,8 @@
     background-repeat: no-repeat;
     width: 100%;
 
-    padding-top: 60px;
-    /*min-height: 95vh;*/
+    height: max-content;
+    padding: 5%;
 }
 
 .contenedorFormSesion{
