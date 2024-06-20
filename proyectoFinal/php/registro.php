@@ -15,9 +15,7 @@
     $correo = mysqli_real_escape_string($conn, $_POST['correo']);
     $contra = mysqli_real_escape_string($conn, $_POST['contra']);
 
-    $nombreTutor = '';
-
-    $query = "INSERT INTO alum (boleta, nombre, apPat, apMat, telefono, semestre, carrera, correo, contra) VALUES ('$boleta', '$nombre', '$apPat', '$apMat', '$tel', '$semestre', '$carrera', '$tipoTutoria', '$genTutor', '$nombreTutor', '$correo', '$contra')";
+    $query = "INSERT INTO alum (boleta, nombre, apPat, apMat, telefono, semestre, carrera, correo, contra) VALUES ('$boleta', '$nombre', '$apPat', '$apMat', '$tel', '$semestre', '$carrera', '$correo', '$contra')";
 
     echo "Query: $query"; // Mensaje de depuración
 
