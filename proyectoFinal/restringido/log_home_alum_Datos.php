@@ -111,7 +111,7 @@
                         </div>
 
                         <div class="botonPDF row">
-                            <button class="mt-3 btn btn-primary">Imprimir acuse</button>
+                            <button class="mt-3 btn btn-primary" onclick="window.location.href = '../php/pdf.php';">Imprimir acuse</button>
                         </div>
 
                     </div>
