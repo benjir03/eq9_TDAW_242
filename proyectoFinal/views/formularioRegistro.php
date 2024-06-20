@@ -1,6 +1,3 @@
-<?php
-?>
-
 <!DOCTYPE html>
 <html lang="es-mx">
     <head>
@@ -30,13 +27,7 @@
                     <li><a href="../index.php" class="nav-link px-2 text-secondary">Inicio</a></li>
                     <li><a href="formularioRegistro.php" class="nav-link px-2 text-white">Registro</a></li>
                     <li><a href="inicioSesionAlum.php" class="nav-link px-2 text-secondary">Inicio de sesión</a></li>
-                    <!--
-                    <li><a href="" class="nav-link px-2 text-secondary">Acuse PDF</a></li>
-                    -->
                 </ul>
-                <!--
-                <button type="button" class="btn btn-outline-light me-2">Login</button>
-                -->
             </div>
         </header>
 
@@ -72,7 +63,7 @@
                             <label for="carrera">Carrera en la que estas inscrito:</label>
                             <br>
                             <select id="carrera" name="carrera" required>
-                                <option value="zzz" disabled selected>Elige tu carrera:</option>
+                                <option value="" disabled selected>Elige tu carrera:</option>
                                 <option value="ISC">Ingeniería en Sistemas Computacionales</option>
                                 <option value="IIA">Ingeniería en Inteligencia Artificial</option>
                                 <option value="LCD">Licenciatura en Ciencia de Datos</option>
@@ -81,7 +72,7 @@
                             <label for="semestre">Semestre que cursas actualmente:</label>
                             <br>
                             <select name="semestre" id="semestre" required>
-                                <option value="0" disabled selected>Elige tu semestre actual:</option>
+                                <option value="" disabled selected>Elige tu semestre actual:</option>
                                 <option value="1">Primero</option>
                                 <option value="2">Segundo</option>
                                 <option value="3">Tercero</option>
@@ -102,7 +93,7 @@
 
                             <label for="correo">Correo institucional:</label>
                             <br>
-                            <input class="campo-texto" type="email" name="correo" id="correo" requiered>
+                            <input class="campo-texto" type="email" name="correo" id="correo" required>
                             <br>
                             <label for="contra">Contraseña:</label>
                             <br>
@@ -132,7 +123,7 @@
               document.getElementById("reg").reset();
             }
           </script>
-        <script src="../validaciones/val-registro.js"></script>
+        //<script src="../validaciones/val-registro.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
