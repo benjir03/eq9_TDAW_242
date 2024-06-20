@@ -12,7 +12,7 @@
         
         <!-- S T Y L E S -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="../estilos/styles-inicioSesion.css">
+        <link rel="stylesheet" href="../estilos/styles-inicioSesionAlum.css">
         
     </head>
 
@@ -41,7 +41,7 @@
         <main>
             <div class="fondoSesion container-fluid d-flex justify-content-center align-items-center row-full-height">
                 <div class="contenedorFormSesion">
-                    <form action="../php/login.php" method="POST" name="inicioSesion" id="iSesion">
+                    <form action="../php/loginAlum.php" method="POST" name="inicioSesion" id="iSesion">
                         <fieldset>
                             <legend>Inicio de sesión</legend>
                             <input class="campo-texto" type="email" name="correoSesion" id="correo" placeholder="Ingresa tu correo">
@@ -57,7 +57,7 @@
                     </form>
 
                     <p>
-                        ¿No eres administrdor? <a href="inicioSesionAlum.php">Inicia sesión como alumno</a>.
+                        ¿No eres alumno? <a href="inicioSesion.php">Inicia sesión como administrador</a>.
                     </p>
                 </div>
             </div>
