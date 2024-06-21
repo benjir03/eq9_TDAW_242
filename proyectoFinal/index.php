@@ -83,7 +83,7 @@
                       
                       <div class="carousel-caption">
                           <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                          <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
+                          <a href="#mas_informacion" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
                       </div>
                   </div>
                   
@@ -92,28 +92,28 @@
                       
                       <div class="carousel-caption">
                           <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                          <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
+                          <a href="#tipo_tutoria" class="btn btn-primary mt-3" onclick="paginaUno();">Tipos de tutorias</a>
                       </div>
                   </div>
                 <div class="carousel-item">
                     <img src="imgs/2.jpg" class="d-block w-100" alt="carousel" title="carousel">
                     <div class="carousel-caption">
                         <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                        <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
+                        <a href="views/formularioRegistro.php" class="btn btn-primary mt-3" onclick="paginaUno();">Completa tu registro</a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="imgs/3.jpg" class="d-block w-100" alt="carousel" title="carousel">
                     <div class="carousel-caption">
                         <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                        <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Mas Información</a>
+                        <a href="views/inicioSesion.php" class="btn btn-primary mt-3" onclick="paginaUno();">Inicia sesion admin</a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="imgs/4.jpg" class="d-block w-100" alt="carousel" title="carousel">
                     <div class="carousel-caption">
                         <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                        <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Mas Información</a>
+                        <a href="views/inicioSesionAlum.php" class="btn btn-primary mt-3" onclick="paginaUno();">Inicia sesion alumno</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -149,7 +149,7 @@
         </div>
 
 
-        <main class="contenido-principal text-center">
+        <main id="mas_informacion"class="contenido-principal text-center">
             <section class="about section-padding">
                 <div class="container">
                     <div class="row">
@@ -208,7 +208,7 @@
               </div>
           </section>
 
-          <section class="container text-center">
+          <section id="tipo_tutoria" class="container text-center">
             <div class="row row-cols-1 row-cols-md-2 g-4 container">
               <div class="col">
                 <div class="card">
