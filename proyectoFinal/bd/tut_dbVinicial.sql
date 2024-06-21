@@ -1,77 +1,71 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Servidor: localhost
--- Tiempo de generación: 06-06-2024 a las 01:06:04
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de datos: `tut_db`
---
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `admin`
---
-CREATE DATABASE tut_db;
+-- Crear la base de datos si no existe
+CREATE DATABASE IF NOT EXISTS tut_db;
 USE tut_db;
 
-CREATE TABLE `admin` (
-  `username` varchar(15) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `pass` varchar(50) NOT NULL
+-- Crear la tabla admin
+CREATE TABLE IF NOT EXISTS admin (
+  username VARCHAR(15) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  pass VARCHAR(50) NOT NULL,
+  PRIMARY KEY (username)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
---
--- Volcado de datos para la tabla `admin`
---
+-- Insertar datos en la tabla admin con valores únicos
+INSERT INTO admin (username, email, pass) VALUES
+('benjir', 'j@gmail.com', '1234'),
+('chis', 'a@e.com', '23');
 
-INSERT INTO `admin` (`username`, `email`, `pass`) VALUES
-('benjir', 'j@gmail', '1234'),
-('chis', 'a@e', '23');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `alum`
---
-
-CREATE TABLE `alum` (
-  `boleta` int(10) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
-  `apPat` varchar(50) NOT NULL,
-  `apMat` varchar(50) NOT NULL,
-  `telefono` int(10) NOT NULL,
-  `semestre` int(2) NOT NULL,
-  `carrera` varchar(3) NOT NULL,
-  `tipoTutoria` varchar(3) NOT NULL,
-  `genTutor` varchar(1) NOT NULL,
-  `nombreTutor` varchar(50) NOT NULL,
-  `correo` varchar(50) NOT NULL,
-  `contra` varchar(50) NOT NULL
+-- Crear la tabla tutor
+CREATE TABLE IF NOT EXISTS tutor (
+  id_profesor INT(10) NOT NULL,
+  nombre VARCHAR(50) NOT NULL,
+  apPat VARCHAR(50) NOT NULL,
+  apMat VARCHAR(50) NOT NULL,
+  imparteTutoria VARCHAR(3) NOT NULL,
+  PRIMARY KEY (id_profesor)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
---
--- Volcado de datos para la tabla `alum`
---
+-- Insertar datos en la tabla tutor
+INSERT INTO tutor (id_profesor, nombre, apPat, apMat, imparteTutoria) VALUES
+(101, 'Tutor 1', 'Apellido1', 'Apellido2', 'GRU'),
+(102, 'Tutor 2', 'Apellido1', 'Apellido2', 'IND');
 
-INSERT INTO `alum` (`boleta`, `nombre`, `apPat`, `apMat`, `telefono`, `semestre`, `carrera`, `tipoTutoria`, `genTutor`, `nombreTutor`, `correo`, `contra`) VALUES
-(2023670015, 'Benji', 'Rosario', 'Cruz', 1234567890, 1, 'IIA', 'GRU', 'H', '', 'benjir@alumno.ipn.mx', '123');
-COMMIT;
+-- Crear la tabla alum
+CREATE TABLE IF NOT EXISTS alum (
+  boleta INT(10) NOT NULL,
+  nombre VARCHAR(50) NOT NULL,
+  apPat VARCHAR(50) NOT NULL,
+  apMat VARCHAR(50) NOT NULL,
+  telefono BIGINT(10) NOT NULL, -- Cambiado a BIGINT para mayor capacidad
+  semestre INT(2) NOT NULL,
+  carrera VARCHAR(3) NOT NULL,
+  tipoTutoria VARCHAR(3) NOT NULL,
+  genTutor VARCHAR(1) NOT NULL,
+  nombreTutor VARCHAR(50) NOT NULL,
+  correo VARCHAR(50) NOT NULL,
+  contra VARCHAR(50) NOT NULL,
+  PRIMARY KEY (boleta)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+-- Insertar datos en la tabla alum
+INSERT INTO alum (boleta, nombre, apPat, apMat, telefono, semestre, carrera, tipoTutoria, genTutor, nombreTutor, correo, contra) VALUES
+(2023670015, 'Benji', 'Rosario', 'Cruz', 1234567890, 1, 'IIA', 'GRU', 'H', 'Tutor 1', 'benjir@alumno.ipn.mx', '123'),
+(2023670020, 'Ana', 'Martinez', 'Lopez', 2345678901, 2, 'IMC', 'IND', 'F', 'Tutor 2', 'ana.m@alumno.ipn.mx', '456');
+
+-- Crear la tabla de relación alum_tutor
+CREATE TABLE IF NOT EXISTS alum_tutor (
+  boleta INT(10) NOT NULL,
+  id_profesor INT(10) NOT NULL,
+  PRIMARY KEY (boleta, id_profesor),
+  FOREIGN KEY (boleta) REFERENCES alum(boleta),
+  FOREIGN KEY (id_profesor) REFERENCES tutor(id_profesor)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- Insertar datos en la tabla de relación alum_tutor basándose en las tablas alum y tutor
+INSERT INTO alum_tutor (boleta, id_profesor)
+SELECT a.boleta, t.id_profesor
+FROM alum a
+JOIN tutor t ON a.nombreTutor = t.nombre;
+
+-- Verificar la tabla de relación
+SELECT * FROM alum_tutor;
