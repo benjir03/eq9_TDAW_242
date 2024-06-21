@@ -1,15 +1,15 @@
 const boleta = document.getElementById("boleta");
 const nombre = document.getElementById("nombre");
-const apPat = document.getElementById("primerAp");
-const apMat = document.getElementById("segundoAp");
+const apPat = document.getElementById("apPat");
+const apMat = document.getElementById("apMat");
 const tel = document.getElementById("tel");
 const semestre = document.getElementById("semestre");
 const carrera = document.getElementById("carrera");
-const hombre = document.getElementById("hombre");
-const mujer = document.getElementById("mujer");
+//const hombre = document.getElementById("hombre");
+//const mujer = document.getElementById("mujer");
 const correo = document.getElementById("correo");
 const pass = document.getElementById("contra");
-const form = document.getElementById("registro");
+const form = document.getElementById("reg");
 const alerta = document.getElementById("alertas");
 
 form.addEventListener("submit", e =>{
@@ -45,10 +45,10 @@ form.addEventListener("submit", e =>{
         alertas += 'Debe seleccionar su carrera<br>';
         entrar = true;
     }
-    if(!hombre.checked && !mujer.checked){
+    /*if(!hombre.checked && !mujer.checked){
         alertas += 'Debe escoger el género de su tutor<br>';
         entrar = true;
-    }
+    }*/
     if(correo.value.trim() === '' || !/^[a-zA-Z0-9._%+-]+@alumno\.ipn\.mx$/.test(correo.value)){
         alertas += 'El correo no es válido. Debe ser un correo institucional (@alumno.ipn.mx)<br>';
         entrar = true;
