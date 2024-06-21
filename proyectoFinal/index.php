@@ -79,7 +79,7 @@
           <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <img src="imgs/0.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                      <img src="imgs/12.jpg" class="d-block w-100" alt="carousel" title="carousel">
                       
                       <div class="carousel-caption">
                           <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
@@ -88,53 +88,32 @@
                   </div>
                   
                   <div class="carousel-item">
-                      <img src="imgs/1.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                      <img src="imgs/13.jpg" class="d-block w-100" alt="carousel" title="carousel">
                       
                       <div class="carousel-caption">
                           <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                          <a href="#tipo_tutoria" class="btn btn-primary mt-3" onclick="paginaUno();">Tipos de tutorias</a>
+                          <a href="#tipo_tutoria" class="btn btn-primary mt-3" onclick="paginaUno();">Tipos de tutorías</a>
                       </div>
                   </div>
                 <div class="carousel-item">
-                    <img src="imgs/2.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                    <img src="imgs/10.jpg" class="d-block w-100" alt="carousel" title="carousel">
                     <div class="carousel-caption">
                         <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
                         <a href="views/formularioRegistro.php" class="btn btn-primary mt-3" onclick="paginaUno();">Completa tu registro</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="imgs/3.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                    <img src="imgs/11.jpg" class="d-block w-100" alt="carousel" title="carousel">
                     <div class="carousel-caption">
                         <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                        <a href="views/inicioSesion.php" class="btn btn-primary mt-3" onclick="paginaUno();">Inicia sesion admin</a>
+                        <a href="views/inicioSesion.php" class="btn btn-primary mt-3" onclick="paginaUno();">Inicia sesión admin</a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="imgs/4.jpg" class="d-block w-100" alt="carousel" title="carousel">
                     <div class="carousel-caption">
                         <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                        <a href="views/inicioSesionAlum.php" class="btn btn-primary mt-3" onclick="paginaUno();">Inicia sesion alumno</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/5.jpg" class="d-block w-100" alt="carousel" title="carousel">
-                    <div class="carousel-caption">
-                        <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                        <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Mas Información</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/6.jpg" class="d-block w-100" alt="carousel" title="carousel">
-                    <div class="carousel-caption">
-                        <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                        <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Mas Información</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/7.jpg" class="d-block w-100" alt="carousel" title="carousel">
-                    <div class="carousel-caption">
-                        <h5>Bienvenidos a la <br> Escuela Superior de Cómputo</h5>
-                        <a href="#" class="btn btn-primary mt-3" onclick="paginaUno();">Mas Información</a>
+                        <a href="views/inicioSesionAlum.php" class="btn btn-primary mt-3" onclick="paginaUno();">Inicia sesión alumno</a>
                     </div>
                 </div>
             </div>
@@ -162,7 +141,7 @@
                             <div class="about-text text-white">
                                 <h2>Objetivo general</h2>
                                 <p>Guiar las acciones tutoriales en las Unidades Académicas; así como considerar la
-                                  planeación, organización, seguimiento y evaluación como los ejes rectores para el
+                                  planeación, organización, seguimiento y evaluación como los ejes rectores para él
 
                                   planteamiento de acciones de alto impacto, que incidan en el proceso de acompañamiento
                                   de tipo académico y personal del alumno, contribuyendo en su formación
@@ -200,7 +179,7 @@
                                   consolidación de las formas de atención individual y grupal en los niveles Medio
                                   Superior y Superior en sus diferentes modalidades, mediante tutorías y asesorías,
                                   integradas en los procesos formativos que acompañen a los alumnos durante su
-                                  trayectoria escolar
+                                  trayectoria escolar.
                               </p>
                           </div>
                       </div>
@@ -232,7 +211,7 @@
                 <div class="card" >
                   <img src="imgs/img_tutoria_recuperacionacademica.jpg" class="card-img-top custom-img-size" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Tutoíia de recuperación</h5>
+                    <h5 class="card-title">Tutoría de recuperación</h5>
                     <a href="#tutoria_recuperacion" class="btn btn-outline-dark">Saber más...</a>  
                   </div>
                 </div>
