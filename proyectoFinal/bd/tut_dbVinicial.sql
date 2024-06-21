@@ -39,9 +39,9 @@ CREATE TABLE IF NOT EXISTS alum (
   telefono BIGINT(10) NOT NULL, -- Cambiado a BIGINT para mayor capacidad
   semestre INT(2) NOT NULL,
   carrera VARCHAR(3) NOT NULL,
-  tipoTutoria VARCHAR(3) NOT NULL,
-  genTutor VARCHAR(1) NOT NULL,
-  nombreTutor VARCHAR(50) NOT NULL,
+  tipoTutoria VARCHAR(3) NULL,
+  genTutor VARCHAR(1) NULL,
+  nombreTutor VARCHAR(50) NULL,
   correo VARCHAR(50) NOT NULL,
   contra VARCHAR(50) NOT NULL,
   PRIMARY KEY (boleta)
