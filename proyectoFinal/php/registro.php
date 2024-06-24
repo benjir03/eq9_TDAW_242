@@ -21,7 +21,8 @@
 
     if (mysqli_query($conn, $query)) {
         echo "Inserción exitosa.";
-        header("Location: ../views/registroCorrecto.php");
+        $Registrado = 1;
+        header("Location: ../views/inicioSesionAlum.php");
         exit();
     } else {
         echo "Error: " . $query . "<br>" . mysqli_error($conn);

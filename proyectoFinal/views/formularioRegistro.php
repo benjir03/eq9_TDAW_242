@@ -13,6 +13,7 @@
 
         <!-- S C R I P T S -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/alertaConfirmacion-registro.js"></script>
         
     </head>
 
@@ -35,7 +36,7 @@
         <main>
             <div class="fondoRegistro container-fluid d-flex justify-content-center align-items-center row-full-height">
                 <div class="contenedorFormRegistro">
-                    <form action="../php/registro.php" method="POST" name="registro" id="reg">
+                    <form onsubmit="return validarRegistro()" action="../php/registro.php" method="POST" name="registro" id="reg">
                         <fieldset>
                             <legend>Datos personales y académicos</legend>
                             <p>Registra tus datos para el programa de tutorías.</p>

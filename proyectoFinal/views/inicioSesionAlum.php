@@ -1,4 +1,9 @@
 <?php
+    if ($Registrado = 1) {
+        $origen = "Termina tu registro iniciando sesión";
+    } else {
+        $origen = "Inicio de sesión como alumno";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +48,7 @@
                 <div class="contenedorFormSesion">
                     <form action="../php/loginAlum.php" method="POST" name="inicioSesion" id="iSesion">
                         <fieldset>
-                            <legend>Inicio de sesión</legend>
+                            <legend><?php echo "$origen";?></legend>
                             <input class="campo-texto" type="email" name="correoSesion" id="correo" placeholder="Ingresa tu correo">
                             <br>
                             <input class="campo-texto" type="password" name="contraSesion" id="contra" placeholder="Ingresa tu contraseña">
