@@ -79,7 +79,7 @@
           <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <img src="imgs/4.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                      <img src="imgs/5.jpg" class="d-block w-100" alt="carousel" title="carousel">
                       
                       <div class="carousel-caption">
                           <h5>Información <br> General</h5>
@@ -129,7 +129,7 @@
 
 
         <main id="mas_informacion"class="contenido-principal text-center">
-            <section class="about section-padding">
+            <section class="about ">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-12 col-12">
@@ -159,7 +159,7 @@
           <section class=" section-spacing " >
               <h2 class="title-center">Misión y Visión</h2>
               <div class="container px-4 text-center">
-                  <div class="row gx-5">
+                  <div class="row row-cols-1">
                       <div class="col">
                           <div class="p-3 contenido-bw"> 
                           <h3>Misión</h3>
