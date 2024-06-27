@@ -1,20 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var fomr = document.getElementById("reg");
 
-    form.addEventListener("submit", function(e) {
+    var form = document.getElementById("reg");
+
+    const boleta = document.getElementById("boleta");
+    const nombre = document.getElementById("nombre");
+    const apPat = document.getElementById("apPat");
+    const apMat = document.getElementById("apMat");
+    const tel = document.getElementById("tel");
+    const semestre = document.getElementById("semestre");
+    const carrera = document.getElementById("carrera");
+    const correo = document.getElementById("correo");
+    const pass = document.getElementById("contra");
+
+    const alerta = document.getElementById("alertas");
+
+    form.addEventListener("submit", e =>{
         e.preventDefault();
-
-        const boleta = document.getElementById("boleta");
-        const nombre = document.getElementById("nombre");
-        const apPat = document.getElementById("apPat");
-        const apMat = document.getElementById("apMat");
-        const tel = document.getElementById("tel");
-        const semestre = document.getElementById("semestre");
-        const carrera = document.getElementById("carrera");
-        const correo = document.getElementById("correo");
-        const pass = document.getElementById("contra");
-        //const form = document.getElementById("reg");
-        const alerta = document.getElementById("alertas");
 
         let alertas = ''; 
         let entrar = false;
@@ -63,18 +64,15 @@ document.addEventListener("DOMContentLoaded", function() {
         if(entrar){
             alerta.innerHTML = alertas;
         }else{
-            form.submit();
-        }
+            alerta.innerHTML = "";
 
-        var mensaje = "¿Tus datos son correctos?\nBoleta: " + boleta + "\nNombre completo: " + apPat + " " + apMat + " " + nombre + "\nTeléfono: " + telefono + "\nCarrera: " + carrera + "\nSemestre: " + semestre + "\nCorreo: " + correo + "\nPresiona Aceptar para enviar el formulario, de lo contrario presiona Cancelar.\n\n";
+            var confirmacion = confirm("¿Tus datos son correctos?\nBoleta: " + boleta.value + "\nNombre completo: " + nombre.value + " " + apPat.value + " " + apMat.value + "\nTeléfono: " + tel.value + "\nCarrera: " + carrera.value + "\nSemestre: " + semestre.value + "\nCorreo: " + correo.value + "\nPresiona Aceptar para enviar el formulario, de lo contrario presiona Cancelar.\n\n");
 
-        var confirmacion = confirm(mensaje);
+            if(confirmacion) {
+                alert("Tus datos han sido guardados correctamente:)");
+                form.submit();
+            }
 
-        if (confirmacion) {
-            alert("¡Tus datos han sido guardados!");
-            return true;
-        } else {
-            return false;
         }
     });
 });

@@ -12,8 +12,7 @@
         <link rel="stylesheet" href="../estilos/styles-registro.css">
 
         <!-- S C R I P T S -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="../js/alertaConfirmacion-registro.js"></script>
+        <script src="../js/jquery-3.7.1.min.js"></script>
         
     </head>
 
@@ -124,7 +123,7 @@
               document.getElementById("reg").reset();
             }
           </script>
-        <script src="../validaciones/val-registro.js"></script>
+        <script src="../validaciones/v-reg.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
