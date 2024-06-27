@@ -98,11 +98,35 @@
           
         <!-- S C R I P T S -->
         <script>
-            function cerrarSesion() {
-                window.location.href = "../php/unlogin.php?sesion=<?php echo "$username"?>";
-            }
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        function cerrarSesion() {
+            window.location.href = "../php/unlogin.php?sesion=<?php echo "$username"?>";
+        }
+
+        $(document).ready(function() {
+            $('#tipoTutoria, input[name="genTutor"]').change(function() {
+                let tipoTutoria = $('#tipoTutoria').val();
+                let genTutor = $('input[name="genTutor"]:checked').val();
+
+                if (tipoTutoria && genTutor) {
+                    $.ajax({
+                        url: 'buscar_tutores.php',
+                        type: 'POST',
+                        data: {
+                            tipoTutoria: tipoTutoria,
+                            genTutor: genTutor
+                        },
+                        success: function(response) {
+                            $('#tutor').html(response);
+                        },
+                        error: function() {
+                            alert('Error al cargar los tutores');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
 </html>

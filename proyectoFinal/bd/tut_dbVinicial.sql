@@ -22,13 +22,14 @@ CREATE TABLE IF NOT EXISTS tutor (
   apPat VARCHAR(50) NOT NULL,
   apMat VARCHAR(50) NOT NULL,
   imparteTutoria VARCHAR(3) NOT NULL,
+  genTutor VARCHAR(1) NULL,
   PRIMARY KEY (id_profesor)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- Insertar datos en la tabla tutor
-INSERT INTO tutor (id_profesor, nombre, apPat, apMat, imparteTutoria) VALUES
-(101, 'Tutor 1', 'Apellido1', 'Apellido2', 'GRU'),
-(102, 'Tutor 2', 'Apellido1', 'Apellido2', 'IND');
+INSERT INTO tutor (id_profesor, nombre, apPat, apMat, imparteTutoria, genTutor) VALUES
+(101, 'Tutor 1', 'Apellido1', 'Apellido2', 'GRU','H'),
+(102, 'Tutor 2', 'Apellido1', 'Apellido2', 'IND','F');
 
 -- Crear la tabla alum
 CREATE TABLE IF NOT EXISTS alum (
