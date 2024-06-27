@@ -226,11 +226,11 @@
                 </div>
               </div>
               <div class="col">
-                <div class="card" id="tutoria_pares">
+                <div class="card">
                   <img src="imgs/tutoria_pares.jpg" class="card-img-top custom-img-size" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Tutoría de regularización</h5>
-                    <a href="tutoria_pares.html" class="btn btn-outline-dark">Saber más...</a> 
+                    <h5 class="card-title">Tutoría de pares</h5>
+                    <a href="#tutoria_pares" class="btn btn-outline-dark">Saber más...</a> 
                   </div>
                 </div>
               </div>
