@@ -42,3 +42,17 @@ legend{
     color: red;
     padding-top: 20px;
 }
+
+
+.error-message{
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px; 
+}
+
+
+.campo-error {
+    border: 1px solid red; 
+}
