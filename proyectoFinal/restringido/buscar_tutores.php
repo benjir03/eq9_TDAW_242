@@ -3,6 +3,7 @@ require 'conect.php';
 
 // Asegurarse de que POST contiene los datos esperados
 if (isset($_POST['tipoTutoria']) && isset($_POST['genTutor'])) {
+    // Procede con el manejo de los datos POST
     $tipoTutoria = mysqli_real_escape_string($conn, $_POST['tipoTutoria']);
     $genTutor = mysqli_real_escape_string($conn, $_POST['genTutor']);
 
