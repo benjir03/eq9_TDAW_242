@@ -58,8 +58,10 @@
                                 <th>Semestre</th>
                                 <th>Carrera</th>
                                 <th>Tutoría</th>
+                                <th>Género tutor</th>
                                 <th>Tutor</th>
                                 <th>Correo</th>
+                                <th>Contraseña</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -80,12 +82,13 @@
                                 <td><?php echo $mostrar['carrera'] ?></td>
                                 <td><?php echo $mostrar['tipoTutoria'] ?></td>
                                 <td><?php echo $mostrar['nombreTutor'] ?></td>
+                                <td><?php echo $mostrar['genTutor'] ?></td>
                                 <td><?php echo $mostrar['correo'] ?></td>
+                                <td><?php echo $mostrar['contra'] ?></td>
                                 <td>
                                     <div class="btn-group-vertical">
-                                        <button type="button" class="btn btn-danger mb-2">Eliminar</button>
-                                        <button type="button" class="btn btn-warning">Modificar</button>
-                                    </div>
+                                        <a class="btn btn-danger mb-2" href="delete.php?boleta=<?= $mostrar['boleta'] ?>">Eliminar</a>
+                                        <a class="btn btn-warning mb-2" href="update.php?boleta=<?= $mostrar['boleta'] ?>">Modificar</a>                                    </div>
                                 </td>
                             </tr>
                             <?php
