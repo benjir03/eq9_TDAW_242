@@ -76,57 +76,60 @@
                 </div>
             </div>
         </section>
-          <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                  <div class="carousel-item active">
-                      <img src="imgs/5.jpg" class="d-block w-100" alt="carousel" title="carousel">
-                      
-                      <div class="carousel-caption">
-                          <h5>Información <br> General</h5>
-                          <a href="#mas_informacion" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
-                      </div>
-                  </div>
-                  
-                  <div class="carousel-item">
-                      <img src="imgs/13.jpg" class="d-block w-100" alt="carousel" title="carousel">
-                      
-                      <div class="carousel-caption">
-                          <h5>Tutorías<br> Impartidas</h5>
-                          <a href="#tipo_tutoria" class="btn btn-primary mt-3" onclick="paginaUno();">Tipos de tutorías</a>
-                      </div>
-                  </div>
-                <div class="carousel-item">
-                    <img src="imgs/registro.jpg" class="d-block w-100" alt="carousel" title="carousel">
-                    <div class="carousel-caption">
-                        <h5>Realiza tu <br>registro</h5>
-                        <a href="views/formularioRegistro.php" class="btn btn-primary mt-3" onclick="paginaUno();">Completa tu registro</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/11.jpg" class="d-block w-100" alt="carousel" title="carousel">
-                    <div class="carousel-caption">
-                        <h5>Inicio de sesión <br> Administrador</h5>
-                        <a href="views/inicioSesion.php" class="btn btn-primary mt-3" onclick="paginaUno();">Inicia sesión admin</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="imgs/10.jpg" class="d-block w-100" alt="carousel" title="carousel">
-                    <div class="carousel-caption">
-                        <h5>Inicio de sesión<br> Alumno</h5>
-                        <a href="views/inicioSesionAlum.php" class="btn btn-primary mt-3" onclick="paginaUno();">Inicia sesión alumno</a>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
 
+        <section>
+            <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgs/5.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                        
+                        <div class="carousel-caption">
+                            <h5>Información <br> General</h5>
+                            <a href="#mas_informacion" class="btn btn-primary mt-3" onclick="paginaUno();">Más Información</a>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="imgs/13.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                        
+                        <div class="carousel-caption">
+                            <h5>Tutorías<br> Impartidas</h5>
+                            <a href="#tipo_tutoria" class="btn btn-primary mt-3" onclick="paginaUno();">Tipos de tutorías</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/registro.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                        <div class="carousel-caption">
+                            <h5>Realiza tu <br>registro</h5>
+                            <a href="views/formularioRegistro.php" class="btn btn-primary mt-3" onclick="paginaUno();">Completa tu registro</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/11.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                        <div class="carousel-caption">
+                            <h5>Inicio de sesión <br> Administrador</h5>
+                            <a href="views/inicioSesion.php" class="btn btn-primary mt-3" onclick="paginaUno();">Inicia sesión admin</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/10.jpg" class="d-block w-100" alt="carousel" title="carousel">
+                        <div class="carousel-caption">
+                            <h5>Inicio de sesión<br> Alumno</h5>
+                            <a href="views/inicioSesionAlum.php" class="btn btn-primary mt-3" onclick="paginaUno();">Inicia sesión alumno</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+          
 
         <main id="mas_informacion"class="contenido-principal text-center">
             <section class="about ">
