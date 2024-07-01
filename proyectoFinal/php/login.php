@@ -27,7 +27,8 @@
         header("location: ../restringido/log_home.php");
         exit();
     } else {
-        echo "Correo o contraseña incorrectos.";
+        header("location: ../views/inicioSesion_mal.php");
+        //echo "Correo o contraseña incorrectos.";
     }
 
     // Opcional: cerrar la conexión
