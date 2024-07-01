@@ -28,8 +28,27 @@ CREATE TABLE IF NOT EXISTS tutor (
 
 -- Insertar datos en la tabla tutor
 INSERT INTO tutor (id_profesor, nombre, apPat, apMat, imparteTutoria, genTutor) VALUES
-(101, 'Tutor 1', 'Apellido1', 'Apellido2', 'GRU','H'),
-(102, 'Tutor 2', 'Apellido1', 'Apellido2', 'IND','F');
+(101, 'Martha Patricia', 'Jiménez', 'Villanueva', 'GRU','F'),
+(102, 'Patricia', 'Escamilla', 'Miranda', 'IND','F'),
+(103, 'Laura', 'Méndez', 'Segundo', 'REG','F'),
+(104, 'Laura', 'Muñoz', 'Salazar', 'IND','F'),
+(105, 'Judith Margarita', 'Tirado', 'Lule', 'REC','F'),
+(106, 'Karina', 'Viveros', 'Vela', 'PAR','F'),
+(107, 'Rocio', 'Palacios', 'Solano', 'IND','F'),
+(108, 'Claudia', 'Diaz', 'Huerta', 'IND','F'),
+(109, 'Elia', 'Ramirez', 'Martinez', 'REC','F'),
+(110, 'Gabriela', 'López', 'Ruiz', 'IND','F'),
+(111, 'José Asunción', 'Enríquez', 'Zárate', 'GRU','H'),
+(112, 'Alberto Jesús', 'Alcántara', 'Méndez', 'IND','H'),
+(113, 'Felipe de Jesús', 'Figueroa', 'del Prado', 'REG','H'),
+(114, 'Erick', 'Linares', 'Vallejo', 'IND','H'),
+(115, 'Edgar', 'Armando', 'Catalán', 'REC','H'),
+(116, 'Jorge', 'Cortes', 'Galicia', 'PAR','H'),
+(117, 'Edgardo', 'Franco', 'Martínez', 'IND','H'),
+(118, 'Vicente', 'Garcia', 'Sales', 'IND','H'),
+(119, 'Iván', 'Mosso', 'García', 'REC','H'),
+(120, 'Miguel', 'Ángel', 'Rodríguez', 'IND','H');
+
 
 -- Crear la tabla alum
 CREATE TABLE IF NOT EXISTS alum (
