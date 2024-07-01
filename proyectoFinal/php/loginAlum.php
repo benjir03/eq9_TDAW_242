@@ -42,7 +42,7 @@
         }
 
     } else {
-        echo "Correo o contraseña incorrectos.";
+        header("location: ../views/inicioSesionAlum_mal.php");
     }
 
     // Opcional: cerrar la conexión
