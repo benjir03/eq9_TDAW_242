@@ -1,6 +1,6 @@
 function validarRegistro() {
     var boleta = document.getElementById("boleta").value;
-    var nombre = document.getElementById("nombre").value;;
+    var nombre = document.getElementById("nombre").value;
     var apPat = document.getElementById("apPat").value;
     var apMat = document.getElementById("apMat").value;
     var telefono = document.getElementById("tel").value;
