@@ -1,15 +1,18 @@
-function confirmarTutor() {
-    var TipoTutoria = document.getElementById("TipoTutoria").value;
-    var tutor = document.getElementById("tutor").value;
+document.addEventListener("DOMContentLoaded", function() {
 
-    var mensaje = "Vas a registrar los datos siguientes: \nTipo de tutoría: " + TipoTutoria + "\nTutor: " + tutor;
+    var form = document.getElementById("regT");
 
-    var confirmacion = confirm(mensaje);
+    const tipoTutoria = document.getElementById("tipoTutoria");
+    const tutor = document.getElementById("tutor");
 
-    if (confirmacion) {
-        alert("¡Ya has completado tu registro!");
-        return true;
-    } else {
-        return false;
-    }
-}
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+
+        var confirmacion = confirm("¿Tus datos son correctos?\nTipo de tutoría: " + tipoTutoria.value + "\nTutor: " + tutor.value + "\nPresiona Aceptar para registrar, de lo contrario presiona Cancelar.\n\n");
+
+        if (confirmacion) {
+            alert("Tus datos han sido guardados correctamente:)");
+            form.submit();
+        }
+    });
+});

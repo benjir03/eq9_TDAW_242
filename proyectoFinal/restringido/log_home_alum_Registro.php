@@ -63,7 +63,7 @@ else {
                 
                 <div class="contenedorSelectorTutor" id="contenedorSelectorTutor">
                     <p class="fw-bold m-0">Completa tu registro</p>
-                    <form onsubmit="return confirmarTutor()" action="../php/registrarTutor.php" method="POST" name="registroTutor" id="regT">
+                    <form onsubmit="valTutor()" action="../php/registrarTutor.php" method="POST" name="registroTutor" id="regT">
                         <label for="tipoTutoria">Elige el tipo de tutoría:</label>
                         <br>
                         <select id="tipoTutoria" name="tipoTutoria" required>
@@ -86,7 +86,8 @@ else {
                             <option value="" disabled selected>Elige un tutor
                         </select>
                         <br>
-                        <button class="mt-3 btn btn-primary">Completar registro</button>
+                        <br>
+                        <button class="btn btn-primary" onclick="varTutor()">Completa tu registro</button>
                     </form>
                 </div>
 
@@ -101,6 +102,20 @@ else {
     </footer>
     
     <!-- S C R I P T S -->
+     <script>
+        function valTutor() {
+            var form = document.getElementById("regT");
+            const tipoTutoria = document.getElementById("tipoTutoria");
+            const tutor = document.getElementById("tutor");
+
+            var confirmacion = confirm("¿Tus datos son correctos?\nTipo de tutoría: " + tipoTutoria.value + "\nTutor: " + tutor.value + "\nPresiona Aceptar para registrar, de lo contrario presiona Cancelar.\n\n");
+
+            if (confirmacion) {
+                alert("Tus datos han sido guardados correctamente:)");
+                form.submit();
+            }
+        }
+     </script>
     <script>
         $(document).ready(function() {
             $('#tipoTutoria, input[name="genTutor"]').change(function() {
