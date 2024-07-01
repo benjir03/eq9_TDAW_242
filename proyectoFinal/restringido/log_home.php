@@ -68,8 +68,17 @@
                         <tbody>
                             <?php
                                 require "../php/conect.php";
+                                
+                                $estudiantes = [];
+                                $i = 0;
+                                $num_filas_query = "SELECT COUNT(*) AS total FROM alum";
+                                $result = mysqli_query($conn, $num_filas_query);
+                                $row = mysqli_fetch_assoc($result);
+                                $num_filas = $row['total'];
+                                $_SESSION['num_filas'] = $num_filas;
+
                                 $datos = "SELECT * from alum";
-                                $consulta = mysqli_query($conn,$datos);
+                                $consulta = mysqli_query($conn,$datos);                            
                                 while($mostrar = mysqli_fetch_array($consulta)){
                             ?>
                             <tr>
@@ -92,7 +101,23 @@
                                 </td>
                             </tr>
                             <?php
+                                    $estudiantes[$i] = [
+                                        'boleta' => $mostrar['boleta'],
+                                        'nombre' => $mostrar['nombre'],
+                                        'apPat' => $mostrar['apPat'],
+                                        'apMat' => $mostrar['apMat'],
+                                        'telefono' => $mostrar['telefono'],
+                                        'semestre' => $mostrar['semestre'],
+                                        'carrera' => $mostrar['carrera'],
+                                        'tipoTutoria' => $mostrar['tipoTutoria'],
+                                        'genTutor' => $mostrar['genTutor'],
+                                        'nombreTutor' => $mostrar['nombreTutor'],
+                                        'correo' => $mostrar['correo'],
+                                        'contra' => $mostrar['contra']
+                                    ];
+                                    $i++;
                                 }
+                                $_SESSION['estudiantes'] = $estudiantes;
                             ?>
                         </tbody>
                     </table>

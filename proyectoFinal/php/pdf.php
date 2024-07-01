@@ -1,5 +1,7 @@
 <?php
-    require 'fpdf186/fpdf.php';
+    require '../fpdf186/fpdf.php';
+    session_start();
+    $correo = $_SESSION["correo"];
 
     class PDF extends FPDF{
         // Pie de página
@@ -32,31 +34,28 @@
     
     
     require 'conect.php';
-    $consulta = "SELECT boleta, nombre, apPat, apMat, telefono, semestre, carrera, tipoTutoria, genTutor, nombreTutor, correo from alum WHERE boleta = '$boleta'"; // Correo del usuario que quiere descargar PDF
-    $datos = mysqli_query($bdRegistro,$consulta);
+    $consulta = "SELECT boleta, nombre, apPat, apMat, telefono, semestre, carrera, tipoTutoria, genTutor, nombreTutor, correo from alum WHERE correo = '$correo'"; // Correo del usuario que quiere descargar PDF
+    $datos = mysqli_query($conn,$consulta);
     $mostrar = mysqli_fetch_array($datos);
 
     // Presentacion de los datos
-    $pdf->Cell(0,10,utf8_decode('Boleta: '),0,0);
-    $pdf->Cell(0,10,utf8_decode($mostrar['boleta']),0,1);
-    $pdf->Cell(0,10,utf8_decode('Nombre: '),0,0);
-    $pdf->Cell(0,10,utf8_decode($mostrar['nombre']),0,1);
-    $pdf->Cell(0,10,utf8_decode('Apellido Paterno: '),0,0);
-    $pdf->Cell(0,10,utf8_decode($mostrar['apPat']),0,1);
-    $pdf->Cell(0,10,utf8_decode('Apellido Materno: '),0,0);
-    $pdf->Cell(0,10,utf8_decode($mostrar['apMat']),0,1);
-    $pdf->Cell(0,10,utf8_decode('Numero de teléfono: '),0,0);
-    $pdf->Cell(0,10,utf8_decode($mostrar['telefono']),0,1);
-    $pdf->Cell(0,10,utf8_decode('Correo electrónico institucional:'),0,0);
-    $pdf->Cell(0,10,utf8_decode($mostrar['correo']),0,1);
-    $pdf->Cell(0,10,utf8_decode('Semestre actual:'),0,0);
-    $pdf->Cell(0,10,utf8_decode($mostrar['semestre']),0,1);
-    $pdf->Cell(0,10,utf8_decode('Carrera:'),0,0);
-    $pdf->Cell(0,10,utf8_decode($mostrar['carrera']),0,1);
-    $pdf->Cell(0,10,utf8_decode('Tutoría en la que se registró:'),0,0);
-    $pdf->Cell(0,10,utf8_decode($mostrar['tipoTutoria']),0,1);
-    $pdf->Cell(0,10,utf8_decode('Nombre del tutor:'),0,0);
-    $pdf->Cell(0,10,utf8_decode($mostrar['nombreTutor']),0,1);
+    $labels = [
+        'Boleta' => $mostrar['boleta'],
+        'Nombre' => $mostrar['nombre'],
+        'Apellido Paterno' => $mostrar['apPat'],
+        'Apellido Materno' => $mostrar['apMat'],
+        'Numero de teléfono' => $mostrar['telefono'],
+        'Correo  institucional' => $mostrar['correo'],
+        'Semestre actual' => $mostrar['semestre'],
+        'Carrera' => $mostrar['carrera'],
+        'Tutoría en la que se registró' => $mostrar['tipoTutoria'],
+        'Nombre del tutor' => $mostrar['nombreTutor']
+    ];
+    
+    foreach ($labels as $label => $value) {
+        $pdf->Cell(70, 10, utf8_decode($label . ': '), 0, 0);
+        $pdf->Cell(0, 10, utf8_decode($value), 0, 1);
+    }
 
     $pdf->Output();
 ?>

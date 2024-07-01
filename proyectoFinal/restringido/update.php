@@ -1,10 +1,31 @@
 <?php
-    require "../php/conect.php";
+    session_start();
 
     $boleta = $_GET['boleta'];
-    $fila = "SELECT * FROM alum WHERE boleta='$boleta'";
-    $consulta = mysqli_query($conn,$fila);
-    $mostrar = mysqli_fetch_array($consulta);
+    $_SESSION['boleta'] = $boleta;
+    $encontrado = [];
+    $estudiantes = $_SESSION['estudiantes'];
+    $num_filas = $_SESSION['num_filas'];
+    
+    for($i=0;$i<$num_filas;$i++){
+        if($estudiantes[$i]['boleta'] == $boleta){
+            $encontrado = [
+                'boleta' => $estudiantes[$i]['boleta'],
+                'nombre' => $estudiantes[$i]['nombre'],
+                'apPat' => $estudiantes[$i]['apPat'],
+                'apMat' => $estudiantes[$i]['apMat'],
+                'telefono' => $estudiantes[$i]['telefono'],
+                'semestre' => $estudiantes[$i]['semestre'],
+                'carrera' => $estudiantes[$i]['carrera'],
+                'tipoTutoria' => $estudiantes[$i]['tipoTutoria'],
+                'genTutor' => $estudiantes[$i]['genTutor'],
+                'nombreTutor' => $estudiantes[$i]['nombreTutor'],
+                'correo' => $estudiantes[$i]['correo'],
+                'contra' => $estudiantes[$i]['contra']
+            ];            
+            break;
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -47,43 +68,43 @@
 
                             <label for="boleta">Boleta:</label>
                             <br>
-                            <input class="campo-texto" type="text" name="boleta" id="boleta" maxlength="10" value="<?= $mostrar['boleta']?>" required>
+                            <input class="campo-texto" type="text" name="boleta" id="boleta" maxlength="10" value="<?= $encontrado['boleta']?>" required>
                             <span class="error-message" id="error-boleta"></span>
                             <br>
                             <label for="nombre">Nombre(s):</label>
                             <br>
-                            <input class="campo-texto" type="text" name="nombre" id="nombre" value="<?= $mostrar['nombre']?>" required>
+                            <input class="campo-texto" type="text" name="nombre" id="nombre" value="<?= $encontrado['nombre']?>" required>
                             <span class="error-message" id="error-nombre"></span>
                             <br>
                             <label for="apPat">Apellido paterno:</label>
                             <br>
-                            <input class="campo-texto" type="text" name="apellidoPaterno" id="apPat" value="<?= $mostrar['apPat']?>" required>
+                            <input class="campo-texto" type="text" name="apellidoPaterno" id="apPat" value="<?= $encontrado['apPat']?>" required>
                             <span class="error-message" id="error-apPat"></span>
                             <br>
                             <label for="apMat">Apellido materno:</label>
                             <br>
-                            <input class="campo-texto" type="text" name="apellidoMaterno" id="apMat" value="<?= $mostrar['apMat']?>" required>
+                            <input class="campo-texto" type="text" name="apellidoMaterno" id="apMat" value="<?= $encontrado['apMat']?>" required>
                             <span class="error-message" id="error-apMat"></span>
                             <br>
                             <label for="tel">No. de teléfono:</label>
                             <br>
-                            <input class="campo-texto" type="tel" name="telefono" id="tel" maxlength="10" value="<?= $mostrar['telefono']?>" required>
+                            <input class="campo-texto" type="tel" name="telefono" id="tel" maxlength="10" value="<?= $encontrado['telefono']?>" required>
                             <span class="error-message" id="error-tel"></span>
                             <br>
                             <label for="carrera">Carrera en la que estas inscrito:</label>
                             <br>
                             <select id="carrera" name="carrera">
-                                <option value="" disabled selected>Elige tu carrera:</option>
+                                <option value="0" disabled selected>Elige tu carrera:</option>
                                 <option value="ISC">Ingeniería en Sistemas Computacionales</option>
                                 <option value="IIA">Ingeniería en Inteligencia Artificial</option>
                                 <option value="LCD">Licenciatura en Ciencia de Datos</option>
-                            </select>
+                            </select><br>
                             <span class="error-message" id="error-carrera"></span>
                             <br>
                             <label for="semestre">Semestre que cursas actualmente:</label>
                             <br>
                             <select name="semestre" id="semestre">
-                                <option value="" disabled selected>Elige tu semestre actual:</option>
+                                <option value="0" disabled selected>Elige tu semestre actual:</option>
                                 <option value="1">Primero</option>
                                 <option value="2">Segundo</option>
                                 <option value="3">Tercero</option>
@@ -94,13 +115,13 @@
                                 <option value="8">Octavo</option>
                                 <option value="9">Noveno</option>
                                 <option value="10">Décimo</option>
-                            </select>
+                            </select><br>
                             <span class="error-message" id="error-semestre"></span>
                             <br>
                             <label for="tipoTutoria">Elige el tipo de tutoría:</label>
                             <br>
                             <select id="tipoTutoria" name="tipoTutoria">
-                                <option value="" disabled selected>Elige el tipo de tutoría:</option>
+                                <option value="0" selected>Elige el tipo de tutoría:</option>
                                 <option value="IND">Tutoría individual</option>
                                 <option value="GRU">Tutoría grupal</option>
                                 <option value="REC">Tutoría de recuperación</option>
@@ -112,21 +133,22 @@
                             <br>
                             <input type="radio" name="genTutor" id="hombre" value="H"> Hombre
                             <input type="radio" name="genTutor" id="mujer" value="M"> Mujer
+                            <input type="radio" name="genTutor" id="sin" value="0"> Ahora no tiene tutor
                             <br>
                             <label for="">Elige a tu tutor:</label>
                             <br>
                             <select name="tutor" id="tutor">
-                                <option value="" disabled selected>Elige un tutor
+                                <option value="0" selected>Elige un tutor
                             </select>
                             <br>
                             <label for="correo">Correo institucional:</label>
                             <br>
-                            <input class="campo-texto" type="email" name="correo" id="correo" value="<?= $mostrar['correo']?>" required>
+                            <input class="campo-texto" type="email" name="correo" id="correo" value="<?= $encontrado['correo']?>" required>
                             <span class="error-message" id="error-correo"></span>
                             <br>
                             <label for="contra">Contraseña:</label>
                             <br>
-                            <input class="campo-texto" type="password" name="contra" id="contra" value="<?= $mostrar['contra']?>" required>
+                            <input class="campo-texto" type="password" name="contra" id="contra" value="<?= $encontrado['contra']?>" required>
                             <span class="error-message" id="error-contra"></span>
                         </fieldset>
                         <p class="alertas" id="alertas"></p>
