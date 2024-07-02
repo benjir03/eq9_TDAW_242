@@ -8,13 +8,17 @@ if (isset($_POST['tipoTutoria']) && isset($_POST['genTutor'])) {
     $genTutor = mysqli_real_escape_string($conn, $_POST['genTutor']);
 
     // Actualizar la consulta para que coincida con la estructura de la tabla tutor
-    $query = "SELECT id_profesor, nombre, apPat, apMat FROM tutor WHERE imparteTutoria = '$tipoTutoria' AND genTutor = '$genTutor'";
+    $query = "SELECT id_profesor, nombre, apPat, apMat, numAlumnos FROM tutor 
+              WHERE imparteTutoria = '$tipoTutoria' 
+              AND genTutor = '$genTutor' 
+              AND numAlumnos < 30";
     $result = mysqli_query($conn, $query);
 
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
             $nombreCompleto = $row['nombre'] . ' ' . $row['apPat'] . ' ' . $row['apMat'];
-            echo "<option value='" . $row['id_profesor'] . "'>" . $nombreCompleto . "</option>";
+            $vacantes = 30 - $row['numAlumnos'];
+            echo "<option value='" . $row['id_profesor'] . "'>" . $nombreCompleto . " (" . $vacantes . " vacantes)" . "</option>";
         }
     } else {
         echo "<option value='' disabled>No se encontraron tutores</option>";
