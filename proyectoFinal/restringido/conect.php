@@ -3,7 +3,7 @@
     $username = "root";  // Ajusta si es necesario
     $password = "";      // Ajusta si es necesario
     $dbname = "tut_db";
-    $port = 3308;
+    $port = 3306;
     
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname, $port);
