@@ -16,7 +16,7 @@
     $correo = $_POST['correo'];
     $contra = $_POST['contra'];
 
-    $sql = "UPDATE alum SET boleta='$boleta', nombre='$nombre', apPat='$apPaterno', apMat='$apMaterno', telefono='$telefono', semestre='$semestre', carrera='$carrera', tipoTutoria='$tipoTut', genTutor='$genTut', nombreTutor='$nombreTut', correo='$correo', contra='$contra' WHERE boleta='$boletaActual'";
+    $sql = "UPDATE alum SET boleta='$boleta', nombre='$nombre', apPat='$apPaterno', apMat='$apMaterno', telefono='$telefono', semestre='$semestre', carrera='$carrera', tipoTutoria=null, genTutor=null, nombreTutor=null, correo='$correo', contra='$contra' WHERE boleta='$boletaActual'";
     $query = mysqli_query($conn,$sql);
 
     if($query){

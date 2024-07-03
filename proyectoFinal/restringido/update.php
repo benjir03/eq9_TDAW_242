@@ -118,29 +118,6 @@
                             </select><br>
                             <span class="error-message" id="error-semestre"></span>
                             <br>
-                            <label for="tipoTutoria">Elige el tipo de tutoría:</label>
-                            <br>
-                            <select id="tipoTutoria" name="tipoTutoria">
-                                <option value="0" selected>Elige el tipo de tutoría:</option>
-                                <option value="IND">Tutoría individual</option>
-                                <option value="GRU">Tutoría grupal</option>
-                                <option value="REC">Tutoría de recuperación</option>
-                                <option value="REG">Tutoría de regularización</option>
-                                <option value="PAR">Tutoría entre pares</option>
-                            </select>
-                            <br>
-                            <label for="genTutor">Elige el género de tu tutor:</label>
-                            <br>
-                            <input type="radio" name="genTutor" id="hombre" value="H"> Hombre
-                            <input type="radio" name="genTutor" id="mujer" value="M"> Mujer
-                            <input type="radio" name="genTutor" id="sin" value="0"> Ahora no tiene tutor
-                            <br>
-                            <label for="">Elige a tu tutor:</label>
-                            <br>
-                            <select name="tutor" id="tutor">
-                                <option value="0" selected>Elige un tutor
-                            </select>
-                            <br>
                             <label for="correo">Correo institucional:</label>
                             <br>
                             <input class="campo-texto" type="email" name="correo" id="correo" value="<?= $encontrado['correo']?>" required>
