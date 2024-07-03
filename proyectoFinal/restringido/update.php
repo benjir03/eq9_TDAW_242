@@ -127,6 +127,13 @@
                             <br>
                             <input class="campo-texto" type="password" name="contra" id="contra" value="<?= $encontrado['contra']?>" required>
                             <span class="error-message" id="error-contra"></span>
+                            <br>
+                            <label for="borrarTut">¿Quieres borrar los datos de la tutoría (tutor y tipo de tutoría)? </label>
+                            <input type="radio" name="borrarTut" id="no" value="0"> No
+                            <input type="radio" name="borrarTut" id="si" value="1"> Sí                            
+                            <br>
+                            <span class="error-message" id="error-borrarTut"></span>
+                            <br>
                         </fieldset>
                         <p class="alertas" id="alertas"></p>
                         <div class="d-grid gap-2 col-6 mx-auto pt-3">

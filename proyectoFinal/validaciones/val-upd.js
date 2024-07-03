@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const carrera = document.getElementById("carrera");
     const correo = document.getElementById("correo");
     const pass = document.getElementById("contra");
+    const si = document.getElementById("si");
+    const no = document.getElementById("no");
 
     const alerta = document.getElementById("alertas");
 
@@ -77,6 +79,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }else{
             mostrarError('error-contra', '');
         }
+        if(!si.checked && !no.checked){
+            mostrarError('error-borrarTut', 'Debe elegir una opción');
+            entrar = true;
+        }else{
+            mostrarError('error-borrarTut', '');
+        }
 
         if (entrar) {
             alerta.innerHTML = 'Por favor corrige los errores en el formulario.';
@@ -84,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Tus datos han sido guardados correctamente:)");
             form.submit();
         }
+        
     });
 
     // Función para mostrar errores específicos junto a los campos correspondientes

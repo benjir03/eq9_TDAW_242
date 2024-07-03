@@ -15,8 +15,14 @@
     $nombreTut = $_POST['tutor'];
     $correo = $_POST['correo'];
     $contra = $_POST['contra'];
+    $opcion = $_POST['borrarTut'];
 
-    $sql = "UPDATE alum SET boleta='$boleta', nombre='$nombre', apPat='$apPaterno', apMat='$apMaterno', telefono='$telefono', semestre='$semestre', carrera='$carrera', tipoTutoria=null, genTutor=null, nombreTutor=null, correo='$correo', contra='$contra' WHERE boleta='$boletaActual'";
+    if($opcion == '1'){
+        $sql = "UPDATE alum SET boleta='$boleta', nombre='$nombre', apPat='$apPaterno', apMat='$apMaterno', telefono='$telefono', semestre='$semestre', carrera='$carrera', tipoTutoria=null, genTutor=null, nombreTutor=null, correo='$correo', contra='$contra' WHERE boleta='$boletaActual'";
+    }else{
+        $sql = "UPDATE alum SET boleta='$boleta', nombre='$nombre', apPat='$apPaterno', apMat='$apMaterno', telefono='$telefono', semestre='$semestre', carrera='$carrera', correo='$correo', contra='$contra' WHERE boleta='$boletaActual'";
+    }
+    //$sql = "UPDATE alum SET boleta='$boleta', nombre='$nombre', apPat='$apPaterno', apMat='$apMaterno', telefono='$telefono', semestre='$semestre', carrera='$carrera', tipoTutoria=null, genTutor=null, nombreTutor=null, correo='$correo', contra='$contra' WHERE boleta='$boletaActual'";
     $query = mysqli_query($conn,$sql);
 
     if($query){
